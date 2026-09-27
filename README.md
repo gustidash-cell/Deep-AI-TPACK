@@ -1,5 +1,7 @@
 # 🚀 Deep-AI-TPACK
 
+🌐 **Live Website (GitHub Pages):** [https://gustidash-cell.github.io/Deep-AI-TPACK/](https://gustidash-cell.github.io/Deep-AI-TPACK/)
+
 > **Platform Digital Interaktif Penguatan Kompetensi AI-TPACK Calon Guru Matematika dalam Konteks SPLDV**
 > Hasil *Developmental Design Research (DDR)* Siklus 1 — Kerjasama **Universitas Katolik Santo Agustinus Hippo** & **Universitas PGRI Ronggolawe Tuban**.
 
