@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-id="LKM P1 Interaktif — Audit &amp; Klasifikasi AI-TPACK SPLDV" data-en="Interactive Worksheet 1 — AI Audit &amp; Classification">LKM P1 Interaktif — Audit &amp; Klasifikasi AI-TPACK SPLDV</title>
+  <meta name="description" content="Lembar Kerja Pertemuan 1 Interaktif. Audit Penjelasan AI vs Buku Teks, Observasi Video, & Game Klasifikasi 8 Kartu Tugas SPLDV.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FLOATING TOP-RIGHT UTILITY CONTROLS BAR -->
+  <div class="top-controls-bar">
+    <button type="button" class="btn-toggle-theme toggle-btn" onclick="toggleTheme()" aria-label="Toggle Theme">
+      <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <span>Mode Terang</span>
+    </button>
+    <button type="button" class="btn-toggle-lang toggle-btn" onclick="toggleLanguage()" aria-label="Toggle Language">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span>English (US)</span>
+    </button>
+  </div>
+
+  <!-- HERO EXECUTIVE HEADER -->
+  <header class="hero-header">
+    <div class="hero-content">
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <span class="badge-tag" data-id="Lembar Kerja Interaktif" data-en="Interactive Worksheet">Lembar Kerja Interaktif</span>
+        <span class="badge-tag gold" data-id="Pertemuan 1 &middot; Audit &amp; Klasifikasi" data-en="Session 1 &middot; Audit &amp; Classify">Pertemuan 1 &middot; Audit &amp; Klasifikasi</span>
+      </div>
+      <h1 class="gradient-text" data-id="LKM P1: Mengenal &amp; Mengevaluasi AI dalam SPLDV" data-en="Worksheet 1: Exploring &amp; Evaluating AI in SPLDV">LKM P1: Mengenal &amp; Mengevaluasi AI dalam SPLDV</h1>
+      <p class="hero-sub" data-id="Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; DDR Siklus 1" data-en="Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers &middot; DDR Cycle 1">
+        Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; DDR Siklus 1
+      </p>
+    </div>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="suite-nav">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html" data-id="Dashboard Utama" data-en="Dashboard">Dashboard Utama</a></li>
+        <li class="nav-item"><a href="HLT_Siklus1_Interactive.html" data-id="HLT Siklus 1" data-en="HLT Cycle 1">HLT Siklus 1</a></li>
+        <li class="nav-item"><a href="ALT_Siklus1_Interactive.html" data-id="ALT &amp; Komparator Lapangan" data-en="ALT &amp; Field Comparator">ALT &amp; Komparator Lapangan</a></li>
+        <li class="nav-item"><a href="LKM_P1_Interactive.html" class="active" data-id="LKM P1: Audit &amp; Klasifikasi" data-en="Worksheet 1: Audit &amp; Classify">LKM P1: Audit &amp; Klasifikasi</a></li>
+        <li class="nav-item"><a href="LKM_P2_Interactive.html" data-id="LKM P2: Rancangan &amp; Lab Prompt" data-en="Worksheet 2: Design &amp; Prompt Lab">LKM P2: Rancangan &amp; Lab Prompt</a></li>
+      </ul>
+      <div style="display:flex; gap:8px;">
+        <button type="button" class="btn btn-outline" style="padding:6px 12px; font-size:0.8rem;" onclick="resetSavedForm('lkm_p1_form')" data-id="Reset Form" data-en="Reset Form">Reset Form</button>
+        <button type="button" class="btn btn-secondary" style="padding:6px 14px; font-size:0.8rem;" onclick="exportToPrint()" data-id="Simpan / Cetak PDF" data-en="Save / Print PDF">Simpan / Cetak PDF</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+
+    <form id="lkm_p1_form" class="autosave-form">
+
+      <!-- GENERAL USER METADATA HEADER CARD -->
+      <section style="margin-bottom: 24px;">
+        <div class="card card-primary">
+          <h3 style="font-size:1.1rem; margin-bottom:14px; color:var(--primary);" data-id="Informasi Pengguna &amp; Kelompok" data-en="User &amp; Group Information">Informasi Pengguna &amp; Kelompok</h3>
+          <div class="grid-2">
+            <div class="form-group">
+              <label class="form-label" for="user_kelompok" data-id="Nama Pengguna / Kelompok:" data-en="User / Group Name:">Nama Pengguna / Kelompok:</label>
+              <input type="text" id="user_kelompok" name="user_kelompok" class="form-control" placeholder="Ketik nama pengguna atau kelompok Anda..." data-id="Ketik nama pengguna atau kelompok Anda..." data-en="Enter your user or group name...">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="user_tanggal" data-id="Tanggal Pelaksanaan:" data-en="Implementation Date:">Tanggal Pelaksanaan:</label>
+              <input type="date" id="user_tanggal" name="user_tanggal" class="form-control">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEARNING OBJECTIVES -->
+      <section style="margin-bottom: 24px;">
+        <div class="card card-secondary" style="padding:20px;">
+          <h4 style="color:var(--secondary); font-size:1rem; margin-bottom:8px;" data-id="Capaian Pembelajaran Pertemuan 1:" data-en="Session 1 Learning Objectives:">Capaian Pembelajaran Pertemuan 1:</h4>
+          <ol style="color:var(--text-muted); font-size:0.88rem; margin-left:20px;">
+            <li data-id="Membedakan AI sebagai penyedia jawaban vs pembangun pemahaman konseptual dalam konteks SPLDV." data-en="Distinguish AI as an answer provider vs a conceptual understanding builder in SPLDV.">Membedakan AI sebagai penyedia jawaban vs pembangun pemahaman konseptual dalam konteks SPLDV.</li>
+            <li data-id="Mengidentifikasi keputusan pedagogis guru saat mengintegrasikan AI melalui observasi video." data-en="Identify teacher pedagogical decisions when integrating AI via video observation.">Mengidentifikasi keputusan pedagogis guru saat mengintegrasikan AI melalui observasi video.</li>
+            <li data-id="Mengklasifikasikan 8 jenis tugas SPLDV berdasarkan kesesuaian penggunaan AI." data-en="Classify 8 SPLDV task cards based on AI suitability.">Mengklasifikasikan 8 jenis tugas SPLDV berdasarkan kesesuaian penggunaan AI.</li>
+            <li data-id="Menyusun Kartu Kriteria Evaluasi AI dan Kerangka Kondisi Batas awal." data-en="Develop an initial AI Evaluation Criteria Card and Boundary Framework.">Menyusun Kartu Kriteria Evaluasi AI dan Kerangka Kondisi Batas awal.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- AKTIVITAS 1 -->
+      <section style="margin-bottom: 30px;">
+        <div class="card card-primary">
+          <div style="display:flex; justify-space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
+            <h2 data-id="AKTIVITAS 1 &middot; Audit Penjelasan AI vs. Buku Teks SPLDV" data-en="ACTIVITY 1 &middot; AI Explanation vs. Textbook Audit">AKTIVITAS 1 &middot; Audit Penjelasan AI vs. Buku Teks SPLDV</h2>
+            <span class="badge-tag" data-id="Audit Komparatif" data-en="Comparative Audit">Audit Komparatif</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:16px;" data-id="Bandingkan penjelasan metode substitusi SPLDV antara <strong>Teks A (Output ChatGPT)</strong> dengan <strong>Teks B (Buku Matematika Kurikulum Merdeka)</strong>." data-en="Compare SPLDV substitution method explanations between <strong>Text A (ChatGPT Output)</strong> and <strong>Text B (Merdeka Curriculum Textbook)</strong>.">
+            Bandingkan penjelasan metode substitusi SPLDV antara <strong>Teks A (Output ChatGPT)</strong> dengan <strong>Teks B (Buku Matematika Kurikulum Merdeka)</strong>.
+          </p>
+
+          <div style="overflow-x:auto; margin-bottom:20px;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th style="width:200px;" data-id="Aspek Analisis" data-en="Analysis Aspect">Aspek Analisis</th>
+                  <th data-id="Penjelasan AI (Teks A)" data-en="AI Explanation (Text A)">Penjelasan AI (Teks A)</th>
+                  <th data-id="Penjelasan Buku Teks (Teks B)" data-en="Textbook Explanation (Text B)">Penjelasan Buku Teks (Teks B)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong data-id="1. Kelengkapan Langkah Prosedural" data-en="1. Procedural Completeness">1. Kelengkapan Langkah Prosedural</strong></td>
+                  <td><textarea name="audit_a1" rows="2" class="form-control" placeholder="Analisis langkah prosedural AI..." data-id="Analisis langkah prosedural AI..." data-en="AI procedural steps analysis..."></textarea></td>
+                  <td><textarea name="audit_b1" rows="2" class="form-control" placeholder="Analisis langkah prosedural buku teks..." data-id="Analisis langkah prosedural buku teks..." data-en="Textbook procedural steps analysis..."></textarea></td>
+                </tr>
+                <tr>
+                  <td><strong data-id="2. Justifikasi MENGAPA Langkah Bekerja" data-en="2. Justification WHY Steps Work">2. Justifikasi MENGAPA Langkah Bekerja</strong></td>
+                  <td><textarea name="audit_a2" rows="2" class="form-control" placeholder="Apakah AI menjelaskan alasan matematika di balik langkah tersebut?..." data-id="Apakah AI menjelaskan alasan matematika di balik langkah tersebut?..." data-en="Does AI explain the underlying math reasoning?..."></textarea></td>
+                  <td><textarea name="audit_b2" rows="2" class="form-control" placeholder="Apakah buku teks memberikan justifikasi visual/aljabar?..." data-id="Apakah buku teks memberikan justifikasi visual/aljabar?..." data-en="Does the textbook provide visual/algebraic justification?..."></textarea></td>
+                </tr>
+                <tr>
+                  <td><strong data-id="3. Kemudahan Dipahami (Skor 1 - 5)" data-en="3. Ease of Understanding (1 - 5)">3. Kemudahan Dipahami (Skor 1 - 5)</strong></td>
+                  <td>
+                    <select name="audit_a3_skor" class="form-select">
+                      <option value="" data-id="Pilih Skor AI..." data-en="Select AI Score...">Pilih Skor AI...</option>
+                      <option value="1">1 - Difficult</option>
+                      <option value="2">2 - Moderate</option>
+                      <option value="3">3 - Average</option>
+                      <option value="4">4 - Easy</option>
+                      <option value="5">5 - Very Easy</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="audit_b3_skor" class="form-select">
+                      <option value="" data-id="Pilih Skor Buku Teks..." data-en="Select Textbook Score...">Pilih Skor Buku Teks...</option>
+                      <option value="1">1 - Difficult</option>
+                      <option value="2">2 - Moderate</option>
+                      <option value="3">3 - Average</option>
+                      <option value="4">4 - Easy</option>
+                      <option value="5">5 - Very Easy</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong data-id="4. Mana yang Lebih Membangun Pemahaman Mendalam?" data-en="4. Which Builds Deeper Conceptual Understanding?">4. Mana yang Lebih Membangun Pemahaman Mendalam?</strong></td>
+                  <td colspan="2"><textarea name="audit_kesimpulan" rows="3" class="form-control" placeholder="Tuliskan perbandingan &amp; alasan mendalam Anda..." data-id="Tuliskan perbandingan &amp; alasan mendalam Anda..." data-en="Write your comparative synthesis &amp; deep rationale..."></textarea></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group">
+              <label class="form-label" style="color:var(--green);" data-id="(+) Kekuatan Penjelasan AI:" data-en="(+) AI Explanation Strengths:">(+) Kekuatan Penjelasan AI:</label>
+              <textarea name="kekuatan_ai" rows="3" class="form-control" placeholder="Kekuatan AI untuk pembelajaran SPLDV..." data-id="Kekuatan AI untuk pembelajaran SPLDV..." data-en="AI strengths for SPLDV learning..."></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label" style="color:var(--red);" data-id="(-) Keterbatasan Penjelasan AI:" data-en="(-) AI Explanation Limitations:">(-) Keterbatasan Penjelasan AI:</label>
+              <textarea name="keterbatasan_ai" rows="3" class="form-control" placeholder="Keterbatasan AI untuk pembelajaran SPLDV..." data-id="Keterbatasan AI untuk pembelajaran SPLDV..." data-en="AI limitations for SPLDV learning..."></textarea>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AKTIVITAS 3 INTERACTIVE GAME & CLASSIFIER -->
+      <section style="margin-bottom: 30px;">
+        <div class="card card-gold">
+          <div style="display:flex; justify-space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
+            <h2 data-id="AKTIVITAS 3 &middot; Klasifikasi Interaktif 8 Kartu Tugas SPLDV" data-en="ACTIVITY 3 &middot; Interactive 8 Task Card Classifier">AKTIVITAS 3 &middot; Klasifikasi Interaktif 8 Kartu Tugas SPLDV</h2>
+            <span class="badge-tag" data-id="Interactive Tool" data-en="Interactive Tool">Interactive Tool</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:16px;" data-id="Pilihlah kategori yang paling sesuai untuk masing-masing dari 8 kartu tugas di bawah ini:" data-en="Select the most appropriate category for each of the 8 task cards below:">
+            Pilihlah kategori yang paling sesuai untuk masing-masing dari 8 kartu tugas di bawah ini:
+          </p>
+
+          <!-- INTERACTIVE CARDS CONTAINER -->
+          <div id="interactive-cards-container" class="grid-2" style="margin-bottom: 24px;">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+        </div>
+      </section>
+
+    </form>
+
+  </main>
+
+  <footer class="suite-footer">
+    <p><strong data-id="LKM Pertemuan 1 Interaktif" data-en="Interactive Session 1 Worksheet">LKM Pertemuan 1 Interaktif</strong> &middot; DDR AI-TPACK &copy; 2026</p>
+    <p style="margin-top:4px; font-size:0.8rem; color:var(--text-dim);" data-id="Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban" data-en="Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban">Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

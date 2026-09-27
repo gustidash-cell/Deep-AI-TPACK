@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-id="HLT Siklus 1 Interaktif — AI-TPACK SPLDV" data-en="Interactive HLT Cycle 1 — AI-TPACK SPLDV">HLT Siklus 1 Interaktif — AI-TPACK SPLDV</title>
+  <meta name="description" content="Hypothetical Learning Trajectory (HLT) Siklus 1 Revisi 3 Pertemuan. Penguatan AI-TPACK Calon Guru Matematika dalam Konteks SPLDV.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FLOATING TOP-RIGHT UTILITY CONTROLS BAR -->
+  <div class="top-controls-bar">
+    <button type="button" class="btn-toggle-theme toggle-btn" onclick="toggleTheme()" aria-label="Toggle Theme">
+      <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <span>Mode Terang</span>
+    </button>
+    <button type="button" class="btn-toggle-lang toggle-btn" onclick="toggleLanguage()" aria-label="Toggle Language">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span>English (US)</span>
+    </button>
+  </div>
+
+  <!-- HERO EXECUTIVE HEADER -->
+  <header class="hero-header">
+    <div class="hero-content">
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <span class="badge-tag" data-id="Hypothetical Learning Trajectory (HLT)" data-en="Hypothetical Learning Trajectory (HLT)">Hypothetical Learning Trajectory (HLT)</span>
+        <span class="badge-tag gold" data-id="Revisi Praktis DDR Siklus 1" data-en="Cycle 1 Practical Revision">Revisi Praktis DDR Siklus 1</span>
+      </div>
+      <h1 class="gradient-text" data-id="Desain HLT 3 Pertemuan AI-TPACK SPLDV" data-en="3-Session HLT Design for AI-TPACK SPLDV">Desain HLT 3 Pertemuan AI-TPACK SPLDV</h1>
+      <p class="hero-sub" data-id="Lintasan Pembelajaran Hipotesis untuk Penguatan Kompetensi AI-TPACK Calon Guru Matematika dalam Konteks Sistem Persamaan Linear Dua Variabel (SPLDV)." data-en="Hypothetical Learning Trajectory for Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers in System of Linear Equations Context.">
+        Lintasan Pembelajaran Hipotesis untuk Penguatan Kompetensi AI-TPACK Calon Guru Matematika dalam Konteks Sistem Persamaan Linear Dua Variabel (SPLDV).
+      </p>
+      <div class="meta-pills">
+        <div class="meta-pill" data-id="<strong>3 Pertemuan Pembelajaran</strong>" data-en="<strong>3 Learning Sessions</strong>"><strong>3 Pertemuan Pembelajaran</strong></div>
+        <div class="meta-pill" data-id="<strong>Kerjasama:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban" data-en="<strong>Institutions:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban"><strong>Kerjasama:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban</div>
+        <div class="meta-pill" data-id="<strong>Tim Peneliti:</strong> Suprihatiningsih &middot; Uripno &middot; Hartono" data-en="<strong>Research Team:</strong> Suprihatiningsih &middot; Uripno &middot; Hartono"><strong>Tim Peneliti:</strong> Suprihatiningsih &middot; Uripno &middot; Hartono</div>
+        <div class="meta-pill" data-id="Status: <strong>Siap Validasi Pakar</strong>" data-en="Status: <strong>Ready for Expert Validation</strong>">Status: <strong>Siap Validasi Pakar</strong></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="suite-nav">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html" data-id="Dashboard Utama" data-en="Dashboard">Dashboard Utama</a></li>
+        <li class="nav-item"><a href="HLT_Siklus1_Interactive.html" class="active" data-id="HLT Siklus 1" data-en="HLT Cycle 1">HLT Siklus 1</a></li>
+        <li class="nav-item"><a href="ALT_Siklus1_Interactive.html" data-id="ALT &amp; Komparator Lapangan" data-en="ALT &amp; Field Comparator">ALT &amp; Komparator Lapangan</a></li>
+        <li class="nav-item"><a href="LKM_P1_Interactive.html" data-id="LKM P1: Audit &amp; Klasifikasi" data-en="Worksheet 1: Audit &amp; Classify">LKM P1: Audit &amp; Klasifikasi</a></li>
+        <li class="nav-item"><a href="LKM_P2_Interactive.html" data-id="LKM P2: Rancangan &amp; Lab Prompt" data-en="Worksheet 2: Design &amp; Prompt Lab">LKM P2: Rancangan &amp; Lab Prompt</a></li>
+      </ul>
+      <div>
+        <button class="btn btn-outline" style="padding:6px 14px; font-size:0.82rem;" onclick="exportToPrint()" data-id="Cetak / PDF" data-en="Print / PDF">Cetak / PDF</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+
+    <!-- SESSION SWITCHER TABS -->
+    <div style="display:flex; gap:10px; margin-bottom:24px; flex-wrap:wrap;">
+      <button type="button" class="btn btn-primary" onclick="showSection('p1-sec', this)" data-id="Pertemuan 1: Audit &amp; Klasifikasi" data-en="Session 1: Audit &amp; Classification">Pertemuan 1: Audit &amp; Klasifikasi</button>
+      <button type="button" class="btn btn-outline" onclick="showSection('p2-sec', this)" data-id="Pertemuan 2: Rancangan &amp; Lab Prompt" data-en="Session 2: Design &amp; Prompt Lab">Pertemuan 2: Rancangan &amp; Lab Prompt</button>
+      <button type="button" class="btn btn-outline" onclick="showSection('p3-sec', this)" data-id="Pertemuan 3: Simulasi &amp; Memformalkan" data-en="Session 3: Simulation &amp; Formalizing">Pertemuan 3: Simulasi &amp; Memformalkan</button>
+      <button type="button" class="btn btn-outline" onclick="showSection('val-sec', this)" data-id="Rubrik Validasi Pakar" data-en="Expert Validation Rubric">Rubrik Validasi Pakar</button>
+    </div>
+
+    <!-- PERTEMUAN 1 SECTION -->
+    <section id="p1-sec" class="hlt-section">
+      <div class="card card-primary">
+        <div style="display:flex; justify-space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
+          <h2 data-id="Pertemuan 1: Mengenal &amp; Mengevaluasi Integrasi AI" data-en="Session 1: Exploring &amp; Evaluating AI Integration">Pertemuan 1: Mengenal &amp; Mengevaluasi Integrasi AI</h2>
+          <span class="badge-tag" data-id="Lembar Kerja 1" data-en="Worksheet 1">Lembar Kerja 1</span>
+        </div>
+        <p style="color:var(--text-muted); margin-bottom:20px;" data-id="<strong>Tujuan:</strong> Mahasiswa calon guru mampu membedakan AI sebagai penyedia jawaban vs pembangun pemahaman, mengidentifikasi keputusan pedagogis guru berbasis AI melalui video, mengklasifikasikan 8 kartu tugas SPLDV, dan menyusun Kartu Kriteria Evaluasi AI awal." data-en="<strong>Objective:</strong> Pre-service teachers distinguish AI as a answer provider vs conceptual understanding builder, identify teacher pedagogical decisions from video observation, classify 8 SPLDV task cards, and formulate an initial AI Evaluation Criteria Card.">
+          <strong>Tujuan:</strong> Mahasiswa calon guru mampu membedakan AI sebagai penyedia jawaban vs pembangun pemahaman, mengidentifikasi keputusan pedagogis guru berbasis AI melalui video, mengklasifikasikan 8 kartu tugas SPLDV, dan menyusun Kartu Kriteria Evaluasi AI awal.
+        </p>
+
+        <!-- ACCORDIONS FOR P1 ACTIVITIES -->
+        <div class="accordion-item active">
+          <div class="accordion-header">
+            <span data-id="Aktivitas 1: Audit Penjelasan AI vs Buku Teks SPLDV" data-en="Activity 1: AI Explanation vs Textbook Audit">Aktivitas 1: Audit Penjelasan AI vs Buku Teks SPLDV</span>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <p data-id="<strong>Aktivitas:</strong> Membandingkan Teks A (Output ChatGPT metode substitusi) dengan Teks B (Buku Teks Kurikulum Merdeka)." data-en="<strong>Activity:</strong> Compare Text A (ChatGPT substitution method output) with Text B (Merdeka Curriculum Textbook)."><strong>Aktivitas:</strong> Membandingkan Teks A (Output ChatGPT metode substitusi) dengan Teks B (Buku Teks Kurikulum Merdeka).</p>
+            <p style="margin-top:10px;"><strong data-id="Indikator &amp; Prediksi Respons:" data-en="Indicators &amp; Predicted Responses:">Indikator &amp; Prediksi Respons:</strong></p>
+            <ul style="color:var(--text-muted); font-size:0.9rem; margin-left:20px; margin-bottom:12px;">
+              <li data-id="<em>Indikator:</em> Mengidentifikasi bahwa Teks A menyajikan langkah prosedural tanpa justifikasi MENGAPA variabel substitusi dipilih." data-en="<em>Indicator:</em> Identifies that Text A presents procedural steps without justifying WHY variables are substituted."><em>Indikator:</em> Mengidentifikasi bahwa Teks A menyajikan langkah prosedural tanpa justifikasi MENGAPA variabel substitusi dipilih.</li>
+              <li data-id="<em>Prediksi Respons:</em> Awalnya terkesan dengan kerapian Teks A, namun setelah difasilitasi sadar bahwa Teks A tidak membangun pemahaman mendalam." data-en="<em>Predicted Response:</em> Initially impressed by Text A's neatness, but realizes after facilitation that Text A lacks deep conceptual grounding."><em>Prediksi Respons:</em> Awalnya terkesan dengan kerapian Teks A, namun setelah difasilitasi sadar bahwa Teks A tidak membangun pemahaman mendalam.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span data-id="Aktivitas 2: Observasi Video Guru Mengajar SPLDV Berbasis AI" data-en="Activity 2: Video Observation of AI-Integrated Teaching">Aktivitas 2: Observasi Video Guru Mengajar SPLDV Berbasis AI</span>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <p data-id="<strong>Aktivitas:</strong> Mengamati video praktik pembelajaran matematika terintegrasi AI dengan 3 lensa observasi &amp; 3 momen henti." data-en="<strong>Activity:</strong> Observe AI-integrated mathematics teaching video with 3 observation lenses &amp; 3 pause moments."><strong>Aktivitas:</strong> Mengamati video praktik pembelajaran matematika terintegrasi AI dengan 3 lensa observasi &amp; 3 momen henti.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PERTEMUAN 2 SECTION -->
+    <section id="p2-sec" class="hlt-section" style="display:none;">
+      <div class="card card-secondary">
+        <div style="display:flex; justify-space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
+          <h2 data-id="Pertemuan 2: Merancang Aktivitas &amp; Laboratorium Prompt Pedagogis" data-en="Session 2: Activity Design &amp; Pedagogical Prompt Lab">Pertemuan 2: Merancang Aktivitas &amp; Laboratorium Prompt Pedagogis</h2>
+          <span class="badge-tag gold" data-id="Lembar Kerja 2" data-en="Worksheet 2">Lembar Kerja 2</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="suite-footer">
+    <p><strong data-id="HLT AI-TPACK Siklus 1 Interaktif" data-en="Interactive AI-TPACK HLT Cycle 1">HLT AI-TPACK Siklus 1 Interaktif</strong> &middot; DDR &copy; 2026</p>
+    <p style="margin-top:4px; font-size:0.8rem; color:var(--text-dim);" data-id="Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban" data-en="Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban">Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    function showSection(secId, btn) {
+      document.querySelectorAll('.hlt-section').forEach(s => s.style.display = 'none');
+      document.getElementById(secId).style.display = 'block';
+      
+      const btns = btn.parentElement.querySelectorAll('.btn');
+      btns.forEach(b => {
+        b.className = 'btn btn-outline';
+      });
+      btn.className = 'btn btn-primary';
+    }
+  </script>
+</body>
+</html>

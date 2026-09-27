@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-id="Suite Digital AI-TPACK — Portal Pembelajaran Interaktif SPLDV" data-en="AI-TPACK Digital Suite — Interactive SPLDV Learning Portal">Suite Digital AI-TPACK — Portal Pembelajaran Interaktif SPLDV</title>
+  <meta name="description" content="Platform Digital Interaktif Penguatan Kompetensi AI-TPACK Calon Guru Matematika dalam Konteks SPLDV. HLT, ALT, dan LKM Interaktif.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FLOATING TOP-RIGHT UTILITY CONTROLS BAR -->
+  <div class="top-controls-bar">
+    <button type="button" class="btn-toggle-theme toggle-btn" onclick="toggleTheme()" aria-label="Toggle Theme">
+      <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <span>Mode Terang</span>
+    </button>
+    <button type="button" class="btn-toggle-lang toggle-btn" onclick="toggleLanguage()" aria-label="Toggle Language">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span>English (US)</span>
+    </button>
+  </div>
+
+  <!-- HERO EXECUTIVE HEADER -->
+  <header class="hero-header">
+    <div class="hero-content">
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <span class="badge-tag" data-id="DDR Siklus 1 &middot; PFR 2025/2026" data-en="DDR Cycle 1 &middot; PFR 2025/2026">DDR Siklus 1 &middot; PFR 2025/2026</span>
+        <span class="badge-tag gold" data-id="Suite Produk Digital Interaktif" data-en="Interactive Digital Product Suite">Suite Produk Digital Interaktif</span>
+      </div>
+      <h1 class="gradient-text" data-id="Penguatan Kompetensi AI-TPACK Calon Guru Matematika" data-en="Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers">Penguatan Kompetensi AI-TPACK Calon Guru Matematika</h1>
+      <p class="hero-sub" data-id="Platform Digital Interaktif Hasil Design Research (DDR) Siklus 1 — Konteks Pembelajaran Sistem Persamaan Linear Dua Variabel (SPLDV)." data-en="Interactive Digital Platform for Developmental Design Research (DDR) Cycle 1 — System of Linear Equations Context.">
+        Platform Digital Interaktif Hasil Design Research (DDR) Siklus 1 — Konteks Pembelajaran Sistem Persamaan Linear Dua Variabel (SPLDV).
+      </p>
+      <div class="meta-pills">
+        <div class="meta-pill" data-id="<strong>3 Pertemuan Pembelajaran</strong> (P1, P2, P3)" data-en="<strong>3 Learning Sessions</strong> (P1, P2, P3)"><strong>3 Pertemuan Pembelajaran</strong> (P1, P2, P3)</div>
+        <div class="meta-pill" data-id="<strong>Kerjasama Kampus:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban" data-en="<strong>Institutional Collaboration:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban"><strong>Kerjasama Kampus:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban</div>
+        <div class="meta-pill" data-id="<strong>Tim Peneliti:</strong> Suprihatiningsih &middot; Uripno &middot; Hartono" data-en="<strong>Research Team:</strong> Suprihatiningsih &middot; Uripno &middot; Hartono"><strong>Tim Peneliti:</strong> Suprihatiningsih &middot; Uripno &middot; Hartono</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="suite-nav">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="index.html" class="active">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span data-id="Dashboard Utama" data-en="Dashboard">Dashboard Utama</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="HLT_Siklus1_Interactive.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+            <span data-id="HLT Siklus 1" data-en="HLT Cycle 1">HLT Siklus 1</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="ALT_Siklus1_Interactive.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <span data-id="ALT &amp; Komparator Lapangan" data-en="ALT &amp; Field Comparator">ALT &amp; Komparator Lapangan</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="LKM_P1_Interactive.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            <span data-id="LKM P1: Audit &amp; Klasifikasi" data-en="Worksheet 1: Audit &amp; Classify">LKM P1: Audit &amp; Klasifikasi</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="LKM_P2_Interactive.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <span data-id="LKM P2: Rancangan &amp; Lab Prompt" data-en="Worksheet 2: Design &amp; Prompt Lab">LKM P2: Rancangan &amp; Lab Prompt</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+
+    <!-- METRICS & KEY HIGHLIGHTS -->
+    <section style="margin-bottom: 40px;">
+      <div class="grid-4">
+        <div class="card card-primary" style="text-align:center;">
+          <div style="font-size:2.4rem; font-weight:800; color:var(--primary);">3</div>
+          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;" data-id="Pertemuan Pembelajaran" data-en="Learning Sessions">Pertemuan Pembelajaran</div>
+        </div>
+        <div class="card card-secondary" style="text-align:center;">
+          <div style="font-size:2.4rem; font-weight:800; color:var(--secondary);">99</div>
+          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;" data-id="Indikator Observasi ALT" data-en="ALT Observation Indicators">Indikator Observasi ALT</div>
+        </div>
+        <div class="card card-gold" style="text-align:center;">
+          <div style="font-size:2.4rem; font-weight:800; color:var(--gold);">4</div>
+          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;" data-id="Prompt Pedagogis Wajib" data-en="Mandatory Pedagogical Prompts">Prompt Pedagogis Wajib</div>
+        </div>
+        <div class="card card-green" style="text-align:center;">
+          <div style="font-size:2.4rem; font-weight:800; color:var(--green);">100%</div>
+          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;" data-id="Interaktif &amp; Auto-Save" data-en="Interactive &amp; Auto-Save">Interaktif &amp; Auto-Save</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODULE CARDS NAVIGATION GRID -->
+    <section style="margin-bottom: 50px;">
+      <h2 style="font-size: 1.6rem; margin-bottom: 20px;" data-id="Modul Digital Utama AI-TPACK" data-en="Core AI-TPACK Digital Modules">Modul Digital Utama AI-TPACK</h2>
+      <div class="grid-2">
+        
+        <!-- CARD HLT -->
+        <div class="card card-primary" style="display:flex; flex-direction:column; justify-space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="badge-tag" data-id="Desain Pembelajaran" data-en="Learning Design">Desain Pembelajaran</span>
+              <span class="status-badge status-sesuai" data-id="Revisi Siklus 1" data-en="Cycle 1 Revision">Revisi Siklus 1</span>
+            </div>
+            <h3 style="font-size:1.3rem; margin-bottom:10px;" data-id="HLT Siklus 1 (Hypothetical Learning Trajectory)" data-en="HLT Cycle 1 (Hypothetical Learning Trajectory)">HLT Siklus 1 (Hypothetical Learning Trajectory)</h3>
+            <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;" data-id="Rancangan hipotesis lintasan belajar calon guru matematika untuk 3 pertemuan. Memuat alur aktivitas, prediksi respons, dan Antisipasi Didaktis Pedagogis (ADP)." data-en="Hypothetical learning trajectory design for pre-service mathematics teachers across 3 sessions, featuring activity flows, predicted responses, and pedagogical anticipation (ADP).">
+              Rancangan hipotesis lintasan belajar calon guru matematika untuk 3 pertemuan. Memuat alur aktivitas, prediksi respons, dan Antisipasi Didaktis Pedagogis (ADP).
+            </p>
+            <ul style="color:var(--text-muted); font-size:0.86rem; margin-left:20px; margin-bottom:20px;">
+              <li data-id="P1: Audit AI vs Buku Teks &amp; Klasifikasi Kartu Tugas" data-en="Session 1: AI vs Textbook Audit &amp; Task Card Classification">P1: Audit AI vs Buku Teks &amp; Klasifikasi Kartu Tugas</li>
+              <li data-id="P2: Lokakarya Rancangan &amp; Laboratorium Prompt Pedagogis" data-en="Session 2: Activity Design Workshop &amp; Prompt Engineering Lab">P2: Lokakarya Rancangan &amp; Laboratorium Prompt Pedagogis</li>
+              <li data-id="P3: Simulasi Mengajar Mikro dengan 4 Komplikasi Real-time" data-en="Session 3: Microteaching Simulation with 4 Real-time Complications">P3: Simulasi Mengajar Mikro dengan 4 Komplikasi Real-time</li>
+            </ul>
+          </div>
+          <a href="HLT_Siklus1_Interactive.html" class="btn btn-primary" data-id="Buka Modul HLT Interaktif &rarr;" data-en="Open Interactive HLT Module &rarr;">Buka Modul HLT Interaktif &rarr;</a>
+        </div>
+
+        <!-- CARD ALT -->
+        <div class="card card-secondary" style="display:flex; flex-direction:column; justify-space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="badge-tag gold" data-id="Data Lapangan" data-en="Field Observation">Data Lapangan</span>
+              <span class="status-badge status-unexpected" data-id="99 Kode Indikator" data-en="99 Indicator Codes">99 Kode Indikator</span>
+            </div>
+            <h3 style="font-size:1.3rem; margin-bottom:10px;" data-id="ALT &amp; Komparator HLT vs ALT Lapangan" data-en="ALT &amp; Field HLT vs ALT Comparator">ALT &amp; Komparator HLT vs ALT Lapangan</h3>
+            <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;" data-id="Matriks observasi aktual lintasan belajar lapangan Siklus 1. Dilengkapi status kesesuaian (✓ Sesuai, ≈ Sebagian, ✗ Berbeda, ⭐ Temuan Tak Terprediksi) &amp; Implikasi Siklus 2." data-en="Actual learning trajectory field observation matrix for Cycle 1, featuring status badges (✓ Conforming, ≈ Partial, ✗ Deviating, ⭐ Unexpected Finding) &amp; Cycle 2 implications.">
+              Matriks observasi aktual lintasan belajar lapangan Siklus 1. Dilengkapi status kesesuaian (✓ Sesuai, ≈ Sebagian, ✗ Berbeda, ⭐ Temuan Tak Terprediksi) &amp; Implikasi Siklus 2.
+            </p>
+            <ul style="color:var(--text-muted); font-size:0.86rem; margin-left:20px; margin-bottom:20px;">
+              <li data-id="Filter pencarian instan berdasar status &amp; kode pertemuan" data-en="Instant search filter by status &amp; session code">Filter pencarian instan berdasar status &amp; kode pertemuan</li>
+              <li data-id="Analisis komparatif Prediksi HLT vs Respons Aktual Lapangan" data-en="Comparative analysis: HLT Prediction vs Actual Field Response">Analisis komparatif Prediksi HLT vs Respons Aktual Lapangan</li>
+              <li data-id="Tindak lanjut operasional &amp; revisi desain untuk Siklus 2" data-en="Operational follow-up &amp; design revisions for Cycle 2">Tindak lanjut operasional &amp; revisi desain untuk Siklus 2</li>
+            </ul>
+          </div>
+          <a href="ALT_Siklus1_Interactive.html" class="btn btn-secondary" data-id="Buka Modul ALT &amp; Komparator &rarr;" data-en="Open ALT &amp; Comparator Module &rarr;">Buka Modul ALT &amp; Komparator &rarr;</a>
+        </div>
+
+        <!-- CARD LKM P1 -->
+        <div class="card card-gold" style="display:flex; flex-direction:column; justify-space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="badge-tag" data-id="Lembar Kerja Interaktif" data-en="Interactive Worksheet">Lembar Kerja Interaktif</span>
+              <span class="status-badge status-sebagian" data-id="Pertemuan 1" data-en="Session 1">Pertemuan 1</span>
+            </div>
+            <h3 style="font-size:1.3rem; margin-bottom:10px;" data-id="LKM P1: Audit &amp; Klasifikasi AI" data-en="Worksheet 1: AI Audit &amp; Classification">LKM P1: Audit &amp; Klasifikasi AI</h3>
+            <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;" data-id="Lembar kerja interaktif Pertemuan 1. Memuat Audit Penjelasan AI vs Buku Teks, Protokol Observasi Video Mengajar Guru, dan Alat Klasifikasi Interaktif 8 Kartu Tugas." data-en="Interactive worksheet for Session 1. Includes AI vs Textbook Audit, Video Observation Protocol, and Interactive 8 Task Card Classifier.">
+              Lembar kerja interaktif Pertemuan 1. Memuat Audit Penjelasan AI vs Buku Teks, Protokol Observasi Video Mengajar Guru, dan Alat Klasifikasi Interaktif 8 Kartu Tugas.
+            </p>
+            <ul style="color:var(--text-muted); font-size:0.86rem; margin-left:20px; margin-bottom:20px;">
+              <li data-id="Formulir evaluasi terisi otomatis &amp; dapat disimpan ke LocalStorage" data-en="Auto-fillable evaluation forms with local storage autosave">Formulir evaluasi terisi otomatis &amp; dapat disimpan ke LocalStorage</li>
+              <li data-id="Game Klasifikasi Kartu Tugas (Kategori A, B, C) dengan umpan balik" data-en="Task Card Classifier Game (Categories A, B, C) with instant feedback">Game Klasifikasi Kartu Tugas (Kategori A, B, C) dengan umpan balik</li>
+              <li data-id="Kartu Kriteria Evaluasi AI &amp; Kerangka Kondisi Batas awal" data-en="Initial AI Evaluation Criteria Card &amp; Boundary Framework">Kartu Kriteria Evaluasi AI &amp; Kerangka Kondisi Batas awal</li>
+            </ul>
+          </div>
+          <a href="LKM_P1_Interactive.html" class="btn btn-outline" style="border-color:var(--gold); color:var(--gold);" data-id="Buka LKM Pertemuan 1 &rarr;" data-en="Open Session 1 Worksheet &rarr;">Buka LKM Pertemuan 1 &rarr;</a>
+        </div>
+
+        <!-- CARD LKM P2 -->
+        <div class="card card-green" style="display:flex; flex-direction:column; justify-space-between;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <span class="badge-tag" data-id="Lembar Kerja Interaktif" data-en="Interactive Worksheet">Lembar Kerja Interaktif</span>
+              <span class="status-badge status-sesuai" data-id="Pertemuan 2" data-en="Session 2">Pertemuan 2</span>
+            </div>
+            <h3 style="font-size:1.3rem; margin-bottom:10px;" data-id="LKM P2: Merancang &amp; Lab Prompt" data-en="Worksheet 2: Design &amp; Prompt Lab">LKM P2: Merancang &amp; Lab Prompt</h3>
+            <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;" data-id="Lokakarya Perancangan Aktivitas 9 Komponen, Laboratorium Rekayasa Prompt Pedagogis, Perpustakaan 4 Prompt Wajib, serta Formulir Peer Review." data-en="9-Component Activity Design Workshop, Pedagogical Prompt Engineering Laboratory, Personal 4-Prompt Library, and Peer Review matrix.">
+              Lokakarya Perancangan Aktivitas 9 Komponen, Laboratorium Rekayasa Prompt Pedagogis, Perpustakaan 4 Prompt Wajib, serta Formulir Peer Review.
+            </p>
+            <ul style="color:var(--text-muted); font-size:0.86rem; margin-left:20px; margin-bottom:20px;">
+              <li data-id="Template Rancangan Aktivitas 4 Kelompok Tematik" data-en="9-Component Activity Design Template for 4 Thematic Focuses">Template Rancangan Aktivitas 4 Kelompok Tematik</li>
+              <li data-id="Formula Rekayasa Prompt Pedagogis 5–7 Komponen" data-en="5–7 Component Pedagogical Prompt Engineering Formula">Formula Rekayasa Prompt Pedagogis 5–7 Komponen</li>
+              <li data-id="Formulir Tinjauan Sejawat (Peer Review) &amp; Log Revisi Prompt" data-en="Peer Review Evaluation Matrix &amp; 5-Minute Revision Log">Formulir Tinjauan Sejawat (Peer Review) &amp; Log Revisi Prompt</li>
+            </ul>
+          </div>
+          <a href="LKM_P2_Interactive.html" class="btn btn-outline" style="border-color:var(--green); color:var(--green);" data-id="Buka LKM Pertemuan 2 &rarr;" data-en="Open Session 2 Worksheet &rarr;">Buka LKM Pertemuan 2 &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIVE FEATURED INTERACTIVE SIMULATOR -->
+    <section style="margin-bottom: 50px;">
+      <div class="card card-primary simulator-box">
+        <div style="display:flex; justify-space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:10px;">
+          <div>
+            <span class="badge-tag gold" data-id="Fitur Unggulan Interaktif" data-en="Featured Interactive Tool">Fitur Unggulan Interaktif</span>
+            <h2 style="font-size:1.5rem;" data-id="Laboratorium Prompt &amp; Simulator AI-TPACK" data-en="Prompt Engineering Laboratory &amp; AI-TPACK Simulator">Laboratorium Prompt &amp; Simulator AI-TPACK</h2>
+          </div>
+          <span style="font-size:0.85rem; color:var(--text-muted);" data-id="Uji &amp; Simulasikan Prompt Pedagogis Langsung di Browser" data-en="Test &amp; Simulate Pedagogical Prompts Live in Browser">Uji &amp; Simulasikan Prompt Pedagogis Langsung di Browser</span>
+        </div>
+
+        <div class="grid-2" style="margin-bottom: 20px;">
+          <div>
+            <div class="form-group">
+              <label class="form-label" for="sim-preset-select" data-id="Pilih Preset Template Prompt Pedagogis:" data-en="Select Pedagogical Prompt Preset:">Pilih Preset Template Prompt Pedagogis:</label>
+              <select id="sim-preset-select" class="form-select">
+                <option value="socratic">1. Tutor Socratik (Metode Substitusi - Tanpa Jawaban)</option>
+                <option value="error_checker">2. Pemeriksa Error (Metode Eliminasi - Scaffolding Tanda)</option>
+                <option value="contextual">3. Generator Soal Kontekstual Indonesia (Warung/Kantin)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="sim-prompt-input" data-id="Teks Prompt Pedagogis (Dapat Diubah):" data-en="Pedagogical Prompt Text (Editable):">Teks Prompt Pedagogis (Dapat Diubah):</label>
+              <textarea id="sim-prompt-input" rows="6" class="form-control">Bertindaklah sebagai tutor Socratik matematika SMP. Seorang siswa bingung MENGAPA pada metode substitusi SPLDV kita menggantikan variabel y dengan (7 - 2x) dari persamaan 2x + y = 7. 
+Jangan berikan jawaban langsung! Ajukan 3 pertanyaan bertahap yang mengarahkan siswa untuk menyadari bahwa y dan (7 - 2x) memiliki nilai yang sama persis.
+Dilarang menggunakan kata-kata: "Caranya adalah", "Jawabannya adalah".</textarea>
+            </div>
+            <button type="button" id="sim-run-btn" class="btn btn-secondary" style="width:100%;" data-id="Uji Prompt di AI &amp; Analisis Pedagogis" data-en="Test Prompt in AI &amp; Analyze">
+              Uji Prompt di AI &amp; Analisis Pedagogis
+            </button>
+          </div>
+
+          <div>
+            <div class="form-group">
+              <label class="form-label" data-id="Hasil Simulasi Output AI:" data-en="Simulated AI Output Result:">Hasil Simulasi Output AI:</label>
+              <div id="sim-output-box" class="sim-output-box" data-id="Klik 'Uji Prompt di AI' untuk mensimulasikan keluaran..." data-en="Click 'Test Prompt' to simulate AI output...">Klik 'Uji Prompt di AI' untuk mensimulasikan keluaran...</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" data-id="Evaluasi Kualitas Pedagogis AI-TPACK:" data-en="Pedagogical Quality Evaluation:">Evaluasi Kualitas Pedagogis AI-TPACK:</label>
+              <div id="sim-analysis-box" style="padding:14px; background:var(--bg-glass); border:1px solid var(--border-color); border-radius:8px; font-size:0.88rem; color:var(--primary);">
+                -
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESEARCH METHODOLOGY & CONTEXT -->
+    <section>
+      <div class="card card-primary">
+        <h3 style="font-size:1.3rem; margin-bottom:14px;" data-id="Kerangka Metodologis DDR &amp; Kompetensi AI-TPACK" data-en="DDR Methodological Framework &amp; AI-TPACK Competence">Kerangka Metodologis DDR &amp; Kompetensi AI-TPACK</h3>
+        <p style="margin-bottom:14px;" data-id="<strong>Developmental Design Research (DDR)</strong> dalam penelitian ini menggunakan alur <em>Hypothetical Learning Trajectory (HLT) &rarr; Field Implementation &rarr; Actual Learning Trajectory (ALT) &rarr; Retrospective Analysis</em>." data-en="<strong>Developmental Design Research (DDR)</strong> follows the sequence <em>Hypothetical Learning Trajectory (HLT) &rarr; Field Implementation &rarr; Actual Learning Trajectory (ALT) &rarr; Retrospective Analysis</em>.">
+          <strong>Developmental Design Research (DDR)</strong> dalam penelitian ini menggunakan alur <em>Hypothetical Learning Trajectory (HLT) &rarr; Field Implementation &rarr; Actual Learning Trajectory (ALT) &rarr; Retrospective Analysis</em>.
+        </p>
+        <div class="grid-3" style="margin-top:20px;">
+          <div style="background:var(--bg-glass); border:1px solid var(--border-subtle); padding:16px; border-radius:10px;">
+            <h4 style="color:var(--primary); font-size:1rem; margin-bottom:8px;" data-id="1. Pedagogy-First AI Integration" data-en="1. Pedagogy-First AI Integration">1. Pedagogy-First AI Integration</h4>
+            <p style="font-size:0.86rem; color:var(--text-muted);" data-id="AI diposisikan sebagai support system dan scaffolding kognitif, BUKAN sebagai penyedia jawaban instan yang menggantikan proses berpikir." data-en="AI is positioned as a support system and cognitive scaffold, NOT as a shortcut solver replacing student thinking.">
+              AI diposisikan sebagai support system dan scaffolding kognitif, BUKAN sebagai penyedia jawaban instan yang menggantikan proses berpikir.
+            </p>
+          </div>
+          <div style="background:var(--bg-glass); border:1px solid var(--border-subtle); padding:16px; border-radius:10px;">
+            <h4 style="color:var(--secondary); font-size:1rem; margin-bottom:8px;" data-id="2. Prompt Engineering Pedagogis" data-en="2. Pedagogical Prompt Engineering">2. Prompt Engineering Pedagogis</h4>
+            <p style="font-size:0.86rem; color:var(--text-muted);" data-id="Calon guru dibekali formula prompt 5–7 komponen yang mencakup [PERAN AI] + [KONTEN] + [KARAKTER] + [BATASAN] + [FORMAT]." data-en="Pre-service teachers master a 5–7 component prompt formula covering [AI ROLE] + [CONTENT] + [LEARNER] + [CONSTRAINTS] + [FORMAT].">
+              Calon guru dibekali formula prompt 5–7 komponen yang mencakup [PERAN AI] + [KONTEN] + [KARAKTER] + [BATASAN] + [FORMAT].
+            </p>
+          </div>
+          <div style="background:var(--bg-glass); border:1px solid var(--border-subtle); padding:16px; border-radius:10px;">
+            <h4 style="color:var(--gold); font-size:1rem; margin-bottom:8px;" data-id="3. Respons Real-Time (ADP)" data-en="3. Real-Time Response (ADP)">3. Respons Real-Time (ADP)</h4>
+            <p style="font-size:0.86rem; color:var(--text-muted);" data-id="Mempersiapkan calon guru menghadapi komplikasi nyata di kelas: AI salah hitung, penjelasan berbelit, atau siswa yang resisten berpikir mandiri." data-en="Equips pre-service teachers to handle real classroom complications: mathematical AI errors, verbose explanations, or cognitive resistance.">
+              Mempersiapkan calon guru menghadapi komplikasi nyata di kelas: AI salah hitung, penjelasan berbelit, atau siswa yang resisten berpikir mandiri.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="suite-footer">
+    <p><strong data-id="Platform Digital AI-TPACK SPLDV" data-en="AI-TPACK SPLDV Digital Platform">Platform Digital AI-TPACK SPLDV</strong> &middot; DDR Siklus 1 &copy; 2026 PFR 2025/2026</p>
+    <p style="margin-top:6px; font-size:0.8rem; color:var(--text-dim);" data-id="Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban" data-en="Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers &middot; Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban">
+      Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

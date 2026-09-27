@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-id="LKM P2 Interaktif — Merancang &amp; Lab Prompt AI-TPACK SPLDV" data-en="Interactive Worksheet 2 — Activity Design &amp; Prompt Lab">LKM P2 Interaktif — Merancang &amp; Lab Prompt AI-TPACK SPLDV</title>
+  <meta name="description" content="Lembar Kerja Pertemuan 2 Interaktif. Lokakarya Rancangan Aktivitas, Laboratorium Prompt Pedagogis 4 Prompt Wajib, & Peer Review.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- FLOATING TOP-RIGHT UTILITY CONTROLS BAR -->
+  <div class="top-controls-bar">
+    <button type="button" class="btn-toggle-theme toggle-btn" onclick="toggleTheme()" aria-label="Toggle Theme">
+      <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <span>Mode Terang</span>
+    </button>
+    <button type="button" class="btn-toggle-lang toggle-btn" onclick="toggleLanguage()" aria-label="Toggle Language">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span>English (US)</span>
+    </button>
+  </div>
+
+  <!-- HERO EXECUTIVE HEADER -->
+  <header class="hero-header">
+    <div class="hero-content">
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <span class="badge-tag" data-id="Lembar Kerja Interaktif" data-en="Interactive Worksheet">Lembar Kerja Interaktif</span>
+        <span class="badge-tag gold" data-id="Pertemuan 2 &middot; Interaktif" data-en="Session 2 &middot; Interactive">Pertemuan 2 &middot; Interaktif</span>
+      </div>
+      <h1 class="gradient-text" data-id="LKM P2: Merancang Aktivitas &amp; Lab Prompt" data-en="Worksheet 2: Activity Design &amp; Prompt Lab">LKM P2: Merancang Aktivitas &amp; Lab Prompt</h1>
+      <p class="hero-sub" data-id="Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; DDR Siklus 1" data-en="Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers &middot; DDR Cycle 1">
+        Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; DDR Siklus 1
+      </p>
+    </div>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="suite-nav">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html" data-id="Dashboard Utama" data-en="Dashboard">Dashboard Utama</a></li>
+        <li class="nav-item"><a href="HLT_Siklus1_Interactive.html" data-id="HLT Siklus 1" data-en="HLT Cycle 1">HLT Siklus 1</a></li>
+        <li class="nav-item"><a href="ALT_Siklus1_Interactive.html" data-id="ALT &amp; Komparator Lapangan" data-en="ALT &amp; Field Comparator">ALT &amp; Komparator Lapangan</a></li>
+        <li class="nav-item"><a href="LKM_P1_Interactive.html" data-id="LKM P1: Audit &amp; Klasifikasi" data-en="Worksheet 1: Audit &amp; Classify">LKM P1: Audit &amp; Klasifikasi</a></li>
+        <li class="nav-item"><a href="LKM_P2_Interactive.html" class="active" data-id="LKM P2: Rancangan &amp; Lab Prompt" data-en="Worksheet 2: Design &amp; Prompt Lab">LKM P2: Rancangan &amp; Lab Prompt</a></li>
+      </ul>
+      <div style="display:flex; gap:8px;">
+        <button type="button" class="btn btn-outline" style="padding:6px 12px; font-size:0.8rem;" onclick="resetSavedForm('lkm_p2_form')" data-id="Reset Form" data-en="Reset Form">Reset Form</button>
+        <button type="button" class="btn btn-secondary" style="padding:6px 14px; font-size:0.8rem;" onclick="exportToPrint()" data-id="Simpan / Cetak PDF" data-en="Save / Print PDF">Simpan / Cetak PDF</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <main class="container">
+
+    <form id="lkm_p2_form" class="autosave-form">
+
+      <!-- GENERAL USER METADATA HEADER CARD -->
+      <section style="margin-bottom: 24px;">
+        <div class="card card-primary">
+          <h3 style="font-size:1.1rem; margin-bottom:14px; color:var(--primary);" data-id="Informasi Pengguna &amp; Kelompok Tematik" data-en="User &amp; Thematic Group Information">Informasi Pengguna &amp; Kelompok Tematik</h3>
+          <div class="grid-3">
+            <div class="form-group">
+              <label class="form-label" for="p2_user_nama" data-id="Nama Pengguna / Fasilitator:" data-en="User / Facilitator Name:">Nama Pengguna / Fasilitator:</label>
+              <input type="text" id="p2_user_nama" name="p2_user_nama" class="form-control" placeholder="Ketik nama Anda..." data-id="Ketik nama Anda..." data-en="Enter your name...">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="p2_mhs_kelompok" data-id="Kelompok / Topik Tematik:" data-en="Thematic Group Focus:">Kelompok / Topik Tematik:</label>
+              <select id="p2_mhs_kelompok" name="p2_mhs_kelompok" class="form-select">
+                <option value="Kelompok A">Kelompok A: Metode Substitusi (Pemahaman Konseptual)</option>
+                <option value="Kelompok B">Kelompok B: Metode Eliminasi (Identifikasi Error)</option>
+                <option value="Kelompok C">Kelompok C: Interpretasi Geometris (Representasi Ganda)</option>
+                <option value="Kelompok D">Kelompok D: Pemodelan Soal Cerita (Konteks Indonesia)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="p2_user_tanggal" data-id="Tanggal Pelaksanaan:" data-en="Implementation Date:">Tanggal Pelaksanaan:</label>
+              <input type="date" id="p2_user_tanggal" name="p2_user_tanggal" class="form-control">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AKTIVITAS 1 -->
+      <section style="margin-bottom: 30px;">
+        <div class="card card-primary">
+          <div style="display:flex; justify-space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
+            <h2 data-id="AKTIVITAS 1 &middot; Lokakarya Rancangan Aktivitas SPLDV Terintegrasi AI" data-en="ACTIVITY 1 &middot; AI-Integrated SPLDV Activity Design Workshop">AKTIVITAS 1 &middot; Lokakarya Rancangan Aktivitas SPLDV Terintegrasi AI</h2>
+            <span class="badge-tag" data-id="Template 9 Komponen" data-en="9-Component Template">Template 9 Komponen</span>
+          </div>
+
+          <div class="card card-gold" style="padding:14px; margin-bottom:16px;">
+            <strong style="color:var(--gold);" data-id="Prinsip Utama:" data-en="Core Principle:">Prinsip Utama:</strong>
+            <span data-id="Pastikan peran AI dalam rancangan BUKAN sebagai pelaku utama yang menjawab soal. Tanyakan: <em>dalam aktivitas ini, SIAPA yang belajar — siswa atau AI?</em>" data-en="Ensure the AI role is NOT a shortcut solver answering questions directly. Ask: <em>in this activity, WHO is learning — the student or the AI?</em>">
+              Pastikan peran AI dalam rancangan BUKAN sebagai pelaku utama yang menjawab soal. Tanyakan: <em>dalam aktivitas ini, SIAPA yang belajar — siswa atau AI?</em>
+            </span>
+          </div>
+
+          <div style="overflow-x:auto;">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th style="width:220px;" data-id="Komponen Rancangan" data-en="Design Component">Komponen Rancangan</th>
+                  <th data-id="Isi Rancangan Aktivitas" data-en="Activity Design Specification">Isi Rancangan Aktivitas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong data-id="1. Topik SPLDV &amp; Sub-fokus" data-en="1. SPLDV Topic &amp; Sub-focus">1. Topik SPLDV &amp; Sub-fokus</strong></td>
+                  <td><textarea name="rancang_topik" rows="2" class="form-control" placeholder="Topik spesifik..." data-id="Topik spesifik..." data-en="Specific topic..."></textarea></td>
+                </tr>
+                <tr>
+                  <td><strong data-id="2. Tujuan Belajar Siswa" data-en="2. Student Learning Objective">2. Tujuan Belajar Siswa</strong></td>
+                  <td><textarea name="rancang_tujuan" rows="2" class="form-control" placeholder="Siswa mampu..." data-id="Siswa mampu..." data-en="Students will be able to..."></textarea></td>
+                </tr>
+                <tr>
+                  <td><strong data-id="3. Peran AI dalam Aktivitas" data-en="3. AI Role in Activity">3. Peran AI dalam Aktivitas</strong></td>
+                  <td><textarea name="rancang_peran_ai" rows="2" class="form-control" placeholder="Pilih: Tutor Socratik / Pemeriksa Error / Generator Soal &amp; alasannya..." data-id="Pilih: Tutor Socratik / Pemeriksa Error / Generator Soal &amp; alasannya..." data-en="Select: Socratic Tutor / Error Checker / Problem Generator &amp; rationale..."></textarea></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- AKTIVITAS 2 & 3 PROMPT LIBRARY -->
+      <section style="margin-bottom: 30px;">
+        <div class="card card-secondary">
+          <div style="display:flex; justify-space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
+            <h2 data-id="AKTIVITAS 2 &amp; 3 &middot; Perpustakaan Prompt Pribadi (4 Prompt Wajib)" data-en="ACTIVITY 2 &amp; 3 &middot; Personal Prompt Library (4 Mandatory Prompts)">AKTIVITAS 2 &amp; 3 &middot; Perpustakaan Prompt Pribadi (4 Prompt Wajib)</h2>
+            <span class="badge-tag gold" data-id="Lab Prompt" data-en="Prompt Lab">Lab Prompt</span>
+          </div>
+
+          <!-- PROMPT 1 -->
+          <div class="card card-primary" style="padding:18px; margin-bottom:18px;">
+            <h4 style="color:var(--primary); font-size:1rem; margin-bottom:8px;" data-id="Prompt 1: Tutor Socratik (Tanpa Memberikan Jawaban)" data-en="Prompt 1: Socratic Tutor (No Direct Answers)">Prompt 1: Tutor Socratik (Tanpa Memberikan Jawaban)</h4>
+            <div class="form-group">
+              <label class="form-label" data-id="Teks Prompt Lengkap:" data-en="Full Prompt Text:">Teks Prompt Lengkap:</label>
+              <textarea name="prompt_1_teks" rows="3" class="form-control" placeholder="Teks prompt Tutor Socratik..." data-id="Teks prompt Tutor Socratik..." data-en="Socratic Tutor prompt text..."></textarea>
+            </div>
+          </div>
+
+          <!-- PROMPT 2 -->
+          <div class="card card-gold" style="padding:18px; margin-bottom:18px;">
+            <h4 style="color:var(--gold); font-size:1rem; margin-bottom:8px;" data-id="Prompt 2: Pemeriksa Kesalahan (Error Checker)" data-en="Prompt 2: Error Checker">Prompt 2: Pemeriksa Kesalahan (Error Checker)</h4>
+            <div class="form-group">
+              <label class="form-label" data-id="Teks Prompt Lengkap:" data-en="Full Prompt Text:">Teks Prompt Lengkap:</label>
+              <textarea name="prompt_2_teks" rows="3" class="form-control" placeholder="Teks prompt Pemeriksa Error..." data-id="Teks prompt Pemeriksa Error..." data-en="Error Checker prompt text..."></textarea>
+            </div>
+          </div>
+
+          <!-- PROMPT 3 -->
+          <div class="card card-green" style="padding:18px; margin-bottom:18px;">
+            <h4 style="color:var(--green); font-size:1rem; margin-bottom:8px;" data-id="Prompt 3: Generator Soal Kontekstual Indonesia" data-en="Prompt 3: Contextual Problem Generator">Prompt 3: Generator Soal Kontekstual Indonesia</h4>
+            <div class="form-group">
+              <label class="form-label" data-id="Teks Prompt Lengkap (Konteks Lokal + Kelipatan 1.000):" data-en="Full Prompt Text (Local Context + 1,000s Rounded):">Teks Prompt Lengkap (Konteks Lokal + Kelipatan 1.000):</label>
+              <textarea name="prompt_3_teks" rows="3" class="form-control" placeholder="Teks prompt Generator Soal Kontekstual..." data-id="Teks prompt Generator Soal Kontekstual..." data-en="Contextual Problem Generator prompt text..."></textarea>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </form>
+
+  </main>
+
+  <footer class="suite-footer">
+    <p><strong data-id="LKM Pertemuan 2 Interaktif" data-en="Interactive Session 2 Worksheet">LKM Pertemuan 2 Interaktif</strong> &middot; DDR AI-TPACK &copy; 2026</p>
+    <p style="margin-top:4px; font-size:0.8rem; color:var(--text-dim);" data-id="Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban" data-en="Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban">Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
