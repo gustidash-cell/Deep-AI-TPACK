@@ -8,9 +8,9 @@
 ---
 
 ## 📌 Tim Peneliti
-- **Suprihatiningsih**
-- **Uripno**
-- **Hartono**
+- **Siti Suprihatiningsih**
+- **Gusti Uripno**
+- **Rudy Hartono**
 
 ---
 
