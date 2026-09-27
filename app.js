@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguage();
   initAccordions();
   initAutoSave();
+  initRealTimeDates();
   initSimulator();
   initFilters();
   initCardClassifier();
@@ -102,6 +103,7 @@ function applyLanguage(lang) {
 
   updateSimulatorLang(lang);
   renderTaskCards();
+  updateRealTimeDateDisplays(lang);
 }
 
 /* --------------------------------------------------------------------------
@@ -165,6 +167,58 @@ function resetSavedForm(formId) {
     localStorage.removeItem(`aitpack_save_${formId}`);
     window.location.reload();
   }
+}
+
+
+/* --------------------------------------------------------------------------
+   REAL-TIME AUTOMATIC DATE SYSTEM
+   Auto-populates date input fields and display labels with current local date
+   -------------------------------------------------------------------------- */
+function getRealtimeDateInfo() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  const iso = `${year}-${month}-${day}`;
+  
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const idStr = now.toLocaleDateString('id-ID', options);
+  const enStr = now.toLocaleDateString('en-US', options);
+  
+  return { iso, idStr, enStr, now };
+}
+
+function initRealTimeDates() {
+  const dateInfo = getRealtimeDateInfo();
+
+  // 1. Auto-fill all <input type="date"> with current realtime date & make strictly non-editable
+  const dateInputs = document.querySelectorAll('input[type="date"]');
+  dateInputs.forEach(input => {
+    input.value = dateInfo.iso;
+    input.setAttribute('readonly', 'true');
+    input.setAttribute('tabindex', '-1');
+    input.style.pointerEvents = 'none';
+    input.style.cursor = 'not-allowed';
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+  });
+
+  // 2. Update all realtime display elements across page
+  updateRealTimeDateDisplays(getCurrentLang());
+}
+
+function updateRealTimeDateDisplays(lang) {
+  const dateInfo = getRealtimeDateInfo();
+  const text = lang === 'en' ? dateInfo.enStr : dateInfo.idStr;
+
+  const elements = document.querySelectorAll('.realtime-date-text, .realtime-date, [data-realtime-date]');
+  elements.forEach(el => {
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.value = text;
+    } else {
+      el.textContent = text;
+    }
+  });
 }
 
 /* --------------------------------------------------------------------------

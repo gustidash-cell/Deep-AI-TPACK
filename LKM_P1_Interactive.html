@@ -39,6 +39,11 @@
       <p class="hero-sub" data-id="Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; DDR Siklus 1" data-en="Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers &middot; DDR Cycle 1">
         Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; DDR Siklus 1
       </p>
+      <div class="meta-pills" style="margin-top:14px;">
+        <div class="meta-pill" data-id="<strong>Fase:</strong> Mengenal &amp; Mengevaluasi" data-en="<strong>Phase:</strong> Exploring &amp; Evaluating"><strong>Fase:</strong> Mengenal &amp; Mengevaluasi</div>
+        <div class="meta-pill" data-id="<strong>Durasi:</strong> 150 Menit (P1)" data-en="<strong>Duration:</strong> 150 Mins (P1)"><strong>Durasi:</strong> 150 Menit (P1)</div>
+        <div class="meta-pill">📅 <strong data-id="Tanggal Akses:" data-en="Access Date:">Tanggal Akses:</strong>&nbsp;<span class="realtime-date-text"></span></div>
+      </div>
     </div>
   </header>
 
@@ -74,8 +79,9 @@
               <input type="text" id="user_kelompok" name="user_kelompok" class="form-control" placeholder="Ketik nama pengguna atau kelompok Anda..." data-id="Ketik nama pengguna atau kelompok Anda..." data-en="Enter your user or group name...">
             </div>
             <div class="form-group">
-              <label class="form-label" for="user_tanggal" data-id="Tanggal Pelaksanaan:" data-en="Implementation Date:">Tanggal Pelaksanaan:</label>
-              <input type="date" id="user_tanggal" name="user_tanggal" class="form-control">
+              <label class="form-label" for="user_tanggal" data-id="Tanggal Pelaksanaan (Otomatis):" data-en="Implementation Date (Automatic):">Tanggal Pelaksanaan (Otomatis):</label>
+              <input type="date" id="user_tanggal" name="user_tanggal" class="form-control" readonly tabindex="-1" style="font-weight:600; background:var(--bg-glass); cursor:not-allowed; opacity:0.85; pointer-events:none;">
+              <small style="color:var(--text-dim); font-size:0.78rem; display:block; margin-top:4px;" data-id="*Terkunci otomatis secara realtime saat diakses: " data-en="*Locked automatically in realtime upon access: ">*Terkunci otomatis secara realtime saat diakses: <strong class="realtime-date-text" style="color:var(--primary);"></strong></small>
             </div>
           </div>
         </div>

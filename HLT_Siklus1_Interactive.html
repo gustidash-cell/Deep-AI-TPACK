@@ -3,12 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-id="HLT Siklus 1 Interaktif — AI-TPACK SPLDV" data-en="Interactive HLT Cycle 1 — AI-TPACK SPLDV">HLT Siklus 1 Interaktif — AI-TPACK SPLDV</title>
-  <meta name="description" content="Hypothetical Learning Trajectory (HLT) Siklus 1 Revisi 3 Pertemuan. Penguatan AI-TPACK Calon Guru Matematika dalam Konteks SPLDV.">
+  <title data-id="HLT Siklus 1 Interaktif — AI-TPACK SPLDV (REVISI)" data-en="Interactive HLT Cycle 1 — AI-TPACK SPLDV (REVISED)">HLT Siklus 1 Interaktif — AI-TPACK SPLDV (REVISI)</title>
+  <meta name="description" content="Hypothetical Learning Trajectory (HLT) Siklus 1 Revisi Konkret & Praktis 3 Pertemuan. Penguatan AI-TPACK Calon Guru Matematika dalam Konteks SPLDV.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .revisi-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(217, 119, 6, 0.15);
+      color: #d97706;
+      border: 1px solid rgba(217, 119, 6, 0.35);
+      border-radius: 6px;
+      padding: 3px 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    body.dark-mode .revisi-badge {
+      background: rgba(245, 158, 11, 0.2);
+      color: #fbbf24;
+      border-color: rgba(245, 158, 11, 0.4);
+    }
+    .table-responsive {
+      width: 100%;
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+    }
+    .hlt-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      text-align: left;
+    }
+    .hlt-table th {
+      background: var(--bg-glass);
+      color: var(--primary);
+      padding: 12px 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+      letter-spacing: 0.06em;
+      border-bottom: 2px solid var(--border-color);
+    }
+    .hlt-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: top;
+      color: var(--text-muted);
+    }
+    .hlt-table tr:hover td {
+      background: var(--bg-glass-hover);
+    }
+    .code-box {
+      background: var(--sim-out-bg);
+      color: var(--sim-out-text);
+      font-family: var(--font-mono);
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    .card-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 14px;
+    }
+    .mini-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      box-shadow: var(--shadow-card);
+    }
+  </style>
 </head>
 <body>
 
@@ -31,19 +108,20 @@
   <!-- HERO EXECUTIVE HEADER -->
   <header class="hero-header">
     <div class="hero-content">
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:10px;">
         <span class="badge-tag" data-id="Hypothetical Learning Trajectory (HLT)" data-en="Hypothetical Learning Trajectory (HLT)">Hypothetical Learning Trajectory (HLT)</span>
-        <span class="badge-tag gold" data-id="Revisi Praktis DDR Siklus 1" data-en="Cycle 1 Practical Revision">Revisi Praktis DDR Siklus 1</span>
+        <span class="badge-tag gold" data-id="Revisi Konkret &amp; Praktis DDR Siklus 1" data-en="Cycle 1 Concrete &amp; Practical Revision">Revisi Konkret &amp; Praktis DDR Siklus 1</span>
       </div>
       <h1 class="gradient-text" data-id="Desain HLT 3 Pertemuan AI-TPACK SPLDV" data-en="3-Session HLT Design for AI-TPACK SPLDV">Desain HLT 3 Pertemuan AI-TPACK SPLDV</h1>
-      <p class="hero-sub" data-id="Lintasan Pembelajaran Hipotesis untuk Penguatan Kompetensi AI-TPACK Calon Guru Matematika dalam Konteks Sistem Persamaan Linear Dua Variabel (SPLDV)." data-en="Hypothetical Learning Trajectory for Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers in System of Linear Equations Context.">
-        Lintasan Pembelajaran Hipotesis untuk Penguatan Kompetensi AI-TPACK Calon Guru Matematika dalam Konteks Sistem Persamaan Linear Dua Variabel (SPLDV).
+      <p class="hero-sub" data-id="Penguatan Kompetensi AI-TPACK pada Calon Guru Matematika dalam Konteks Sistem Persamaan Linear Dua Variabel (SPLDV). 3 Pertemuan @ 150 Menit." data-en="Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers in System of Linear Equations (SPLDV) Context. 3 Sessions @ 150 Minutes.">
+        Penguatan Kompetensi AI-TPACK pada Calon Guru Matematika dalam Konteks Sistem Persamaan Linear Dua Variabel (SPLDV). 3 Pertemuan @ 150 Menit.
       </p>
       <div class="meta-pills">
-        <div class="meta-pill" data-id="<strong>3 Pertemuan Pembelajaran</strong>" data-en="<strong>3 Learning Sessions</strong>"><strong>3 Pertemuan Pembelajaran</strong></div>
-        <div class="meta-pill" data-id="<strong>Kerjasama:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban" data-en="<strong>Institutions:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban"><strong>Kerjasama:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban</div>
-        <div class="meta-pill" data-id="<strong>Tim Peneliti:</strong> Siti Suprihatiningsih &middot; Gusti Uripno &middot; Rudy Hartono" data-en="<strong>Research Team:</strong> Siti Suprihatiningsih &middot; Gusti Uripno &middot; Rudy Hartono"><strong>Tim Peneliti:</strong> Siti Suprihatiningsih &middot; Gusti Uripno &middot; Rudy Hartono</div>
-        <div class="meta-pill" data-id="Status: <strong>Siap Validasi Pakar</strong>" data-en="Status: <strong>Ready for Expert Validation</strong>">Status: <strong>Siap Validasi Pakar</strong></div>
+        <div class="meta-pill" data-id="<strong>3 Pertemuan Pembelajaran</strong> (150 Menit / Pertemuan)" data-en="<strong>3 Learning Sessions</strong> (150 Mins / Session)"><strong>3 Pertemuan Pembelajaran</strong> (150 Menit / Pertemuan)</div>
+        <div class="meta-pill" data-id="<strong>Kerjasama:</strong> Unika St. Agustinus Hippo &amp; UNIROW Tuban" data-en="<strong>Institutions:</strong> Unika St. Agustinus Hippo &amp; UNIROW Tuban"><strong>Kerjasama:</strong> Unika St. Agustinus Hippo &amp; UNIROW Tuban</div>
+        <div class="meta-pill" data-id="<strong>Tim Peneliti:</strong> Suprihatiningsih &middot; Uripno &middot; Hartono" data-en="<strong>Research Team:</strong> Suprihatiningsih &middot; Uripno &middot; Hartono"><strong>Tim Peneliti:</strong> Suprihatiningsih &middot; Uripno &middot; Hartono</div>
+        <div class="meta-pill" data-id="Status: <strong>Revisi Berbasis Field Test</strong>" data-en="Status: <strong>Revised Based on Field Test</strong>">Status: <strong>Revisi Berbasis Field Test</strong></div>
+        <div class="meta-pill">📅 <strong data-id="Akses Realtime:" data-en="Realtime Access:">Akses Realtime:</strong>&nbsp;<span class="realtime-date-text"></span></div>
       </div>
     </div>
   </header>
@@ -53,7 +131,7 @@
     <div class="nav-container">
       <ul class="nav-links">
         <li class="nav-item"><a href="index.html" data-id="Dashboard Utama" data-en="Dashboard">Dashboard Utama</a></li>
-        <li class="nav-item"><a href="HLT_Siklus1_Interactive.html" class="active" data-id="HLT Siklus 1" data-en="HLT Cycle 1">HLT Siklus 1</a></li>
+        <li class="nav-item"><a href="HLT_Siklus1_Interactive.html" class="active" data-id="HLT Siklus 1 (Revisi)" data-en="HLT Cycle 1 (Revised)">HLT Siklus 1 (Revisi)</a></li>
         <li class="nav-item"><a href="ALT_Siklus1_Interactive.html" data-id="ALT &amp; Komparator Lapangan" data-en="ALT &amp; Field Comparator">ALT &amp; Komparator Lapangan</a></li>
         <li class="nav-item"><a href="LKM_P1_Interactive.html" data-id="LKM P1: Audit &amp; Klasifikasi" data-en="Worksheet 1: Audit &amp; Classify">LKM P1: Audit &amp; Klasifikasi</a></li>
         <li class="nav-item"><a href="LKM_P2_Interactive.html" data-id="LKM P2: Rancangan &amp; Lab Prompt" data-en="Worksheet 2: Design &amp; Prompt Lab">LKM P2: Rancangan &amp; Lab Prompt</a></li>
@@ -69,46 +147,245 @@
 
     <!-- SESSION SWITCHER TABS -->
     <div style="display:flex; gap:10px; margin-bottom:24px; flex-wrap:wrap;">
-      <button type="button" class="btn btn-primary" onclick="showSection('p1-sec', this)" data-id="Pertemuan 1: Audit &amp; Klasifikasi" data-en="Session 1: Audit &amp; Classification">Pertemuan 1: Audit &amp; Klasifikasi</button>
-      <button type="button" class="btn btn-outline" onclick="showSection('p2-sec', this)" data-id="Pertemuan 2: Rancangan &amp; Lab Prompt" data-en="Session 2: Design &amp; Prompt Lab">Pertemuan 2: Rancangan &amp; Lab Prompt</button>
+      <button type="button" class="btn btn-primary" onclick="showSection('overview-sec', this)" data-id="Gambaran Umum HLT" data-en="HLT Overview">Gambaran Umum HLT</button>
+      <button type="button" class="btn btn-outline" onclick="showSection('p1-sec', this)" data-id="Pertemuan 1: Mengenal &amp; Mengevaluasi" data-en="Session 1: Exploring &amp; Evaluating">Pertemuan 1: Mengenal &amp; Mengevaluasi</button>
+      <button type="button" class="btn btn-outline" onclick="showSection('p2-sec', this)" data-id="Pertemuan 2: Merancang &amp; Lab Prompt" data-en="Session 2: Design &amp; Prompt Lab">Pertemuan 2: Merancang &amp; Lab Prompt</button>
       <button type="button" class="btn btn-outline" onclick="showSection('p3-sec', this)" data-id="Pertemuan 3: Simulasi &amp; Memformalkan" data-en="Session 3: Simulation &amp; Formalizing">Pertemuan 3: Simulasi &amp; Memformalkan</button>
       <button type="button" class="btn btn-outline" onclick="showSection('val-sec', this)" data-id="Rubrik Validasi Pakar" data-en="Expert Validation Rubric">Rubrik Validasi Pakar</button>
     </div>
 
-    <!-- PERTEMUAN 1 SECTION -->
-    <section id="p1-sec" class="hlt-section">
+    <!-- OVERVIEW SECTION -->
+    <section id="overview-sec" class="hlt-section">
       <div class="card card-primary">
-        <div style="display:flex; justify-space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
-          <h2 data-id="Pertemuan 1: Mengenal &amp; Mengevaluasi Integrasi AI" data-en="Session 1: Exploring &amp; Evaluating AI Integration">Pertemuan 1: Mengenal &amp; Mengevaluasi Integrasi AI</h2>
-          <span class="badge-tag" data-id="Lembar Kerja 1" data-en="Worksheet 1">Lembar Kerja 1</span>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
+          <h2 data-id="Matriks Prospektif HLT 3 Pertemuan AI-TPACK (SPLDV)" data-en="Prospective HLT 3-Session Matrix for AI-TPACK (SPLDV)">Matriks Prospektif HLT 3 Pertemuan AI-TPACK (SPLDV)</h2>
+          <span class="badge-tag gold" data-id="DDR Siklus 1 — Opsi B Compact" data-en="DDR Cycle 1 — Option B Compact">DDR Siklus 1 — Opsi B Compact</span>
         </div>
-        <p style="color:var(--text-muted); margin-bottom:20px;" data-id="<strong>Tujuan:</strong> Mahasiswa calon guru mampu membedakan AI sebagai penyedia jawaban vs pembangun pemahaman, mengidentifikasi keputusan pedagogis guru berbasis AI melalui video, mengklasifikasikan 8 kartu tugas SPLDV, dan menyusun Kartu Kriteria Evaluasi AI awal." data-en="<strong>Objective:</strong> Pre-service teachers distinguish AI as a answer provider vs conceptual understanding builder, identify teacher pedagogical decisions from video observation, classify 8 SPLDV task cards, and formulate an initial AI Evaluation Criteria Card.">
-          <strong>Tujuan:</strong> Mahasiswa calon guru mampu membedakan AI sebagai penyedia jawaban vs pembangun pemahaman, mengidentifikasi keputusan pedagogis guru berbasis AI melalui video, mengklasifikasikan 8 kartu tugas SPLDV, dan menyusun Kartu Kriteria Evaluasi AI awal.
+        <p style="color:var(--text-muted); margin-bottom:20px;" data-id="Rancangan HLT versi 3 Pertemuan @ 150 menit menggabungkan target hambatan belajar (Epistemologis, Ontogenik, dan Didaktis) secara efektif dengan minimal empat titik refleksi eksplisit untuk menghasilkan data ALT pada analisis retrospektif." data-en="The 3-session HLT design @ 150 mins effectively merges learning obstacle targets (Epistemological, Ontogenic, and Didactical) with explicit reflection points to generate ALT data for retrospective analysis.">
+          Rancangan HLT versi 3 Pertemuan @ 150 menit menggabungkan target hambatan belajar (Epistemologis, Ontogenik, dan Didaktis) secara efektif dengan minimal empat titik refleksi eksplisit untuk menghasilkan data ALT pada analisis retrospektif.
         </p>
 
-        <!-- ACCORDIONS FOR P1 ACTIVITIES -->
-        <div class="accordion-item active">
+        <div class="card-grid-2">
+          <div class="mini-card">
+            <h4 style="color:var(--primary); margin-bottom:8px;" data-id="Pertemuan 1: Mengenal &amp; Mengevaluasi" data-en="Session 1: Exploring &amp; Evaluating">Pertemuan 1: Mengenal &amp; Mengevaluasi</h4>
+            <p style="font-size:0.86rem; color:var(--text-muted);" data-id="<strong>Target Hambatan:</strong> Epistemologis + Ontogenik<br><strong>Produk Utama:</strong> Audit Penjelasan AI, Observasi Video, Klasifikasi 8 Kartu Tugas, Kartu Kriteria Evaluasi AI &amp; Kerangka Kondisi Batas Awal." data-en="<strong>Target Obstacles:</strong> Epistemological + Ontogenic<br><strong>Key Output:</strong> AI Explanation Audit, Video Observation, 8 Task Card Classification, AI Evaluation Criteria Card &amp; Initial Boundary Conditions.">
+              <strong>Target Hambatan:</strong> Epistemologis + Ontogenik<br>
+              <strong>Produk Utama:</strong> Audit Penjelasan AI, Observasi Video, Klasifikasi 8 Kartu Tugas, Kartu Kriteria Evaluasi AI &amp; Kerangka Kondisi Batas Awal.
+            </p>
+          </div>
+          <div class="mini-card">
+            <h4 style="color:var(--secondary); margin-bottom:8px;" data-id="Pertemuan 2: Merancang" data-en="Session 2: Designing">Pertemuan 2: Merancang</h4>
+            <p style="font-size:0.86rem; color:var(--text-muted);" data-id="<strong>Target Hambatan:</strong> Didaktis<br><strong>Produk Utama:</strong> Rancangan Aktivitas Kelompok, Lab Prompt Pedagogis (Formula 5 Komponen), Generator Soal Kontekstual Indonesia, Peer Review Prompt." data-en="<strong>Target Obstacle:</strong> Didactical<br><strong>Key Output:</strong> Group Activity Design, Pedagogical Prompt Lab (5-Component Formula), Indonesia Contextual Item Generator, Prompt Peer Review.">
+              <strong>Target Hambatan:</strong> Didaktis<br>
+              <strong>Produk Utama:</strong> Rancangan Aktivitas Kelompok, Lab Prompt Pedagogis (Formula 5 Komponen), Generator Soal Kontekstual Indonesia, Peer Review Prompt.
+            </p>
+          </div>
+          <div class="mini-card">
+            <h4 style="color:var(--gold); margin-bottom:8px;" data-id="Pertemuan 3: Merefleksi &amp; Memformalkan" data-en="Session 3: Reflecting &amp; Formalizing">Pertemuan 3: Merefleksi &amp; Memformalkan</h4>
+            <p style="font-size:0.86rem; color:var(--text-muted);" data-id="<strong>Target Hambatan:</strong> Integrasi &amp; Konsolidasi<br><strong>Produk Utama:</strong> Simulasi Mengajar Mikro dengan 4 Komplikasi Real-Time, Analisis Retrospektif Artefak P1-P3, Kerangka AI-Pedagogik Pribadi (1 Halaman)." data-en="<strong>Target Obstacle:</strong> Integration &amp; Consolidation<br><strong>Key Output:</strong> Micro-Teaching Simulation with 4 Real-Time Complications, Retrospective Analysis of P1-P3 Artifacts, Personal AI-Pedagogical Framework (1 Page).">
+              <strong>Target Hambatan:</strong> Integrasi &amp; Konsolidasi<br>
+              <strong>Produk Utama:</strong> Simulasi Mengajar Mikro dengan 4 Komplikasi Real-Time, Analisis Retrospektif Artefak P1-P3, Kerangka AI-Pedagogik Pribadi (1 Halaman).
+            </p>
+          </div>
+          <div class="mini-card">
+            <h4 style="color:var(--green); margin-bottom:8px;" data-id="Catatan Revisi Lapangan (Field Test)" data-en="Field Test Revision Notes">Catatan Revisi Lapangan (Field Test)</h4>
+            <p style="font-size:0.86rem; color:var(--text-muted);" data-id="Telah disesuaikan secara presisi dengan dokumen <code>HLT_Konkret_Praktis_REVISI.docx</code> mencakup penyesuaian durasi P1, jembatan reflektif P2, lembar observer 5 kolom P3, serta komplikasi 3 &amp; 4." data-en="Precisely aligned with <code>HLT_Konkret_Praktis_REVISI.docx</code> including P1 timing adjustments, P2 reflective bridge, P3 5-column observer sheet, and complications 3 &amp; 4.">
+              Telah disesuaikan secara presisi dengan dokumen <code>HLT_Konkret_Praktis_REVISI.docx</code> mencakup penyesuaian durasi P1, jembatan reflektif P2, lembar observer 5 kolom P3, serta komplikasi 3 &amp; 4.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERTEMUAN 1 SECTION -->
+    <section id="p1-sec" class="hlt-section" style="display:none;">
+      <div class="card card-primary">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
+          <h2 data-id="Pertemuan 1: Mengenal &amp; Mengevaluasi Integrasi AI" data-en="Session 1: Exploring &amp; Evaluating AI Integration">Pertemuan 1: Mengenal &amp; Mengevaluasi Integrasi AI</h2>
+          <span class="badge-tag" data-id="Durasi: 150 Menit" data-en="Duration: 150 Mins">Durasi: 150 Menit</span>
+        </div>
+
+        <!-- P1 ITEM 1 -->
+        <div class="accordion-item active" style="margin-bottom:16px;">
           <div class="accordion-header">
-            <span data-id="Aktivitas 1: Audit Penjelasan AI vs Buku Teks SPLDV" data-en="Activity 1: AI Explanation vs Textbook Audit">Aktivitas 1: Audit Penjelasan AI vs Buku Teks SPLDV</span>
+            <div>
+              <span class="badge-tag" style="margin-right:8px;">P1.1</span>
+              <strong data-id="Membedakan AI Penyedia Jawaban vs Pembangun Pemahaman Konseptual" data-en="Distinguishing Answer Provider AI vs Conceptual Understanding Builder">Membedakan AI Penyedia Jawaban vs Pembangun Pemahaman Konseptual</strong>
+            </div>
             <span>▼</span>
           </div>
           <div class="accordion-body">
-            <p data-id="<strong>Aktivitas:</strong> Membandingkan Teks A (Output ChatGPT metode substitusi) dengan Teks B (Buku Teks Kurikulum Merdeka)." data-en="<strong>Activity:</strong> Compare Text A (ChatGPT substitution method output) with Text B (Merdeka Curriculum Textbook)."><strong>Aktivitas:</strong> Membandingkan Teks A (Output ChatGPT metode substitusi) dengan Teks B (Buku Teks Kurikulum Merdeka).</p>
-            <p style="margin-top:10px;"><strong data-id="Indikator &amp; Prediksi Respons:" data-en="Indicators &amp; Predicted Responses:">Indikator &amp; Prediksi Respons:</strong></p>
-            <ul style="color:var(--text-muted); font-size:0.9rem; margin-left:20px; margin-bottom:12px;">
-              <li data-id="<em>Indikator:</em> Mengidentifikasi bahwa Teks A menyajikan langkah prosedural tanpa justifikasi MENGAPA variabel substitusi dipilih." data-en="<em>Indicator:</em> Identifies that Text A presents procedural steps without justifying WHY variables are substituted."><em>Indikator:</em> Mengidentifikasi bahwa Teks A menyajikan langkah prosedural tanpa justifikasi MENGAPA variabel substitusi dipilih.</li>
-              <li data-id="<em>Prediksi Respons:</em> Awalnya terkesan dengan kerapian Teks A, namun setelah difasilitasi sadar bahwa Teks A tidak membangun pemahaman mendalam." data-en="<em>Predicted Response:</em> Initially impressed by Text A's neatness, but realizes after facilitation that Text A lacks deep conceptual grounding."><em>Prediksi Respons:</em> Awalnya terkesan dengan kerapian Teks A, namun setelah difasilitasi sadar bahwa Teks A tidak membangun pemahaman mendalam.</li>
+            <div class="revisi-badge" data-id="REVISI: Diskusi Dipangkas dari 15 &rarr; 10 Menit" data-en="REVISION: Discussion Trimmed from 15 &rarr; 10 Mins">REVISI: Diskusi Dipangkas dari 15 &rarr; 10 Menit</div>
+            
+            <p data-id="<strong>Tujuan Pembelajaran:</strong> Membedakan AI sebagai penyedia jawaban versus AI sebagai pembangun pemahaman konseptual dalam konteks SPLDV." data-en="<strong>Learning Objective:</strong> Distinguish AI as answer provider vs AI as conceptual understanding builder in SPLDV context.">
+              <strong>Tujuan Pembelajaran:</strong> Membedakan AI sebagai penyedia jawaban versus AI sebagai pembangun pemahaman konseptual dalam konteks SPLDV.
+            </p>
+            
+            <p style="margin-top:10px;"><strong data-id="Aktivitas Guru (Contoh Konkret):" data-en="Teacher Activity (Concrete Example):">Aktivitas Guru (Contoh Konkret):</strong></p>
+            <ul style="color:var(--text-muted); font-size:0.89rem; margin-left:20px; margin-bottom:12px;">
+              <li data-id="<strong>Langkah 1:</strong> Siapkan dua teks berdampingan: <em>Teks A</em> (ChatGPT verbatim untuk prompt metode substitusi 2x+y=7 dan x+y=5) &amp; <em>Teks B</em> (Fotokopi buku Kurikulum Merdeka Matematika Kelas VIII)." data-en="<strong>Step 1:</strong> Prepare two side-by-side texts: <em>Text A</em> (ChatGPT verbatim for substitution method prompt 2x+y=7 and x+y=5) &amp; <em>Text B</em> (Merdeka Curriculum Grade VIII math textbook)."><strong>Langkah 1:</strong> Siapkan dua teks berdampingan: <em>Teks A</em> (ChatGPT verbatim untuk prompt metode substitusi 2x+y=7 dan x+y=5) &amp; <em>Teks B</em> (Fotokopi buku Kurikulum Merdeka Matematika Kelas VIII).</li>
+              <li data-id="<strong>Langkah 2:</strong> Bagikan Lembar Kerja Perbandingan (20 menit berpasangan): Membandingkan kelengkapan prosedural, justifikasi MENGAPA langkah bekerja, kemudahan dipahami (skor 1-5), dan teks mana yang lebih membangun pemahaman mendalam." data-en="<strong>Step 2:</strong> Distribute Comparison Worksheet (20 mins in pairs): Compare procedural completeness, justification of WHY steps work, ease of understanding (score 1-5), and which text builds deeper conceptual understanding."><strong>Langkah 2:</strong> Bagikan Lembar Kerja Perbandingan (20 menit berpasangan): Membandingkan kelengkapan prosedural, justifikasi MENGAPA langkah bekerja, kemudahan dipahami (skor 1-5), dan teks mana yang lebih membangun pemahaman mendalam.</li>
+              <li data-id="<strong>Langkah 3 [REVISI: Dipangkas 15&rarr;10 menit]:</strong> Diskusi kelas. Memetakan di papan kolom 'Kekuatan AI' vs 'Keterbatasan AI'. Pertanyaan pemantik: <em>'Jika siswa selalu bisa minta AI jelaskan langkah-langkah, apakah siswa masih perlu memahami MENGAPA metode substitusi bekerja secara aljabar?'</em>" data-en="<strong>Step 3 [REVISED: Trimmed 15&rarr;10 mins]:</strong> Class discussion. Map 'AI Strengths' vs 'AI Limitations' on board. Prompt question: <em>'If students can always ask AI for steps, do they still need to understand WHY substitution works algebraically?'</em>"><strong>Langkah 3 [REVISI: Dipangkas 15&rarr;10 menit]:</strong> Diskusi kelas. Memetakan di papan kolom 'Kekuatan AI' vs 'Keterbatasan AI'. Pertanyaan pemantik: <em>'Jika siswa selalu bisa minta AI jelaskan langkah-langkah, apakah siswa masih perlu memahami MENGAPA metode substitusi bekerja secara aljabar?'</em></li>
             </ul>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Mahasiswa langsung menyimpulkan 'AI selalu lebih baik karena lebih lengkap dan lebih mudah dipahami' tanpa mengkaji kandungan konseptual." data-en="Students immediately conclude 'AI is always better because it is more complete and easier to read' without examining conceptual content.">
+                  Mahasiswa langsung menyimpulkan 'AI selalu lebih baik karena lebih lengkap dan lebih mudah dipahami' tanpa mengkaji kandungan konseptual.
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Tanyakan: 'Apakah kemudahan membaca selalu bermakna kemudahan memahami secara mendalam?' Minta mahasiswa mencari satu konsep dalam penjelasan AI yang tidak disertai alasan mengapa langkah itu bekerja, lalu bandingkan dengan versi buku teks." data-en="Ask: 'Does readability always mean deep conceptual understanding?' Request students to find one concept in AI output lacking justification for why steps work, then compare with textbook.">
+                  Tanyakan: 'Apakah kemudahan membaca selalu bermakna kemudahan memahami secara mendalam?' Minta mahasiswa mencari satu konsep dalam penjelasan AI yang tidak disertai alasan mengapa langkah itu bekerja, lalu bandingkan dengan versi buku teks.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="accordion-item">
+        <!-- P1 ITEM 2 -->
+        <div class="accordion-item" style="margin-bottom:16px;">
           <div class="accordion-header">
-            <span data-id="Aktivitas 2: Observasi Video Guru Mengajar SPLDV Berbasis AI" data-en="Activity 2: Video Observation of AI-Integrated Teaching">Aktivitas 2: Observasi Video Guru Mengajar SPLDV Berbasis AI</span>
+            <div>
+              <span class="badge-tag" style="margin-right:8px;">P1.2</span>
+              <strong data-id="Mengidentifikasi Keputusan Pedagogis Guru via Observasi Video" data-en="Identifying Teacher Pedagogical Decisions via Video Observation">Mengidentifikasi Keputusan Pedagogis Guru via Observasi Video</strong>
+            </div>
             <span>▼</span>
           </div>
           <div class="accordion-body">
-            <p data-id="<strong>Aktivitas:</strong> Mengamati video praktik pembelajaran matematika terintegrasi AI dengan 3 lensa observasi &amp; 3 momen henti." data-en="<strong>Activity:</strong> Observe AI-integrated mathematics teaching video with 3 observation lenses &amp; 3 pause moments."><strong>Aktivitas:</strong> Mengamati video praktik pembelajaran matematika terintegrasi AI dengan 3 lensa observasi &amp; 3 momen henti.</p>
+            <div class="revisi-badge" data-id="REVISI: Diskusi Dipangkas dari 10 &rarr; 5 Menit (Elaborasi dilanjutkan di P2)" data-en="REVISION: Discussion Trimmed from 10 &rarr; 5 Mins (Elaboration continued in P2)">REVISI: Diskusi Dipangkas dari 10 &rarr; 5 Menit (Elaborasi dilanjutkan di P2)</div>
+
+            <p data-id="<strong>Tujuan Pembelajaran:</strong> Mengidentifikasi keputusan pedagogis guru saat mengintegrasikan AI dalam pembelajaran SPLDV melalui observasi video." data-en="<strong>Learning Objective:</strong> Identify teacher pedagogical decisions when integrating AI into SPLDV learning via video observation.">
+              <strong>Tujuan Pembelajaran:</strong> Mengidentifikasi keputusan pedagogis guru saat mengintegrasikan AI dalam pembelajaran SPLDV melalui observasi video.
+            </p>
+
+            <p style="margin-top:10px;"><strong data-id="Aktivitas Guru (3 Momen Henti):" data-en="Teacher Activity (3 Pause Moments):">Aktivitas Guru (3 Momen Henti):</strong></p>
+            <ul style="color:var(--text-muted); font-size:0.89rem; margin-left:20px; margin-bottom:12px;">
+              <li data-id="<strong>Menit ke-8:</strong> Guru meminta AI menghasilkan 3 representasi berbeda (tabel, grafik, persamaan) untuk solusi SPLDV &rarr; Tanya: 'Mengapa guru memilih AI untuk bagian ini?'" data-en="<strong>Minute 8:</strong> Teacher asks AI to generate 3 different representations (table, graph, equation) for SPLDV solution &rarr; Ask: 'Why did teacher choose AI for this?'"><strong>Menit ke-8:</strong> Guru meminta AI menghasilkan 3 representasi berbeda (tabel, grafik, persamaan) untuk solusi SPLDV &rarr; Tanya: 'Mengapa guru memilih AI untuk bagian ini?'</li>
+              <li data-id="<strong>Menit ke-12:</strong> AI memberikan penjelasan eliminasi dengan 6 langkah tidak efisien &rarr; Tanya: 'Apa yang dilakukan guru? Apakah AI yang memutuskan langkah ini direvisi?'" data-en="<strong>Minute 12:</strong> AI provides inefficient 6-step elimination explanation &rarr; Ask: 'What did the teacher do? Did AI decide to revise this step?'"><strong>Menit ke-12:</strong> AI memberikan penjelasan eliminasi dengan 6 langkah tidak efisien &rarr; Tanya: 'Apa yang dilakukan guru? Apakah AI yang memutuskan langkah ini direvisi?'</li>
+              <li data-id="<strong>Menit ke-17:</strong> Siswa menanyakan ke AI secara mandiri, guru memfasilitasi evaluasi &rarr; Tanya: 'Keputusan pedagogis apa yang TIDAK bisa dilakukan AI di sini?'" data-en="<strong>Minute 17:</strong> Student asks AI independently, teacher facilitates evaluation &rarr; Ask: 'What pedagogical decision COULD NOT be made by AI here?'"><strong>Menit ke-17:</strong> Siswa menanyakan ke AI secara mandiri, guru memfasilitasi evaluasi &rarr; Tanya: 'Keputusan pedagogis apa yang TIDAK bisa dilakukan AI di sini?'</li>
+              <li data-id="<strong>Langkah 3 [REVISI: Dipangkas 10&rarr;5 menit]:</strong> Diskusi berpasangan membandingkan protokol observasi." data-en="<strong>Step 3 [REVISED: Trimmed 10&rarr;5 mins]:</strong> Pair discussion comparing observation protocols."><strong>Langkah 3 [REVISI: Dipangkas 10&rarr;5 menit]:</strong> Diskusi berpasangan membandingkan protokol observasi.</li>
+            </ul>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Saat menonton video, mahasiswa berfokus pada alat AI yang digunakan bukan pada keputusan pedagogis guru." data-en="While watching video, students focus on AI tools used rather than teacher pedagogical decisions.">
+                  Saat menonton video, mahasiswa berfokus pada alat AI yang digunakan bukan pada keputusan pedagogis guru.
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Hentikan video sebentar di momen koreksi guru: 'Perhatikan apa yang baru saja dilakukan guru. Apakah AI yang melakukan ini? Apa keputusan spesifik yang dibuat guru?' Kemudian lanjutkan." data-en="Pause video at teacher correction moment: 'Observe what teacher just did. Did AI do this? What specific decision did teacher make?' Then continue.">
+                  Hentikan video sebentar di momen koreksi guru: 'Perhatikan apa yang baru saja dilakukan guru. Apakah AI yang melakukan ini? Apa keputusan spesifik yang dibuat guru?' Kemudian lanjutkan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P1 ITEM 3 -->
+        <div class="accordion-item" style="margin-bottom:16px;">
+          <div class="accordion-header">
+            <div>
+              <span class="badge-tag" style="margin-right:8px;">P1.3</span>
+              <strong data-id="Klasifikasi 8 Kartu Tugas SPLDV (Kondisi Batas)" data-en="Classification of 8 SPLDV Task Cards (Boundary Conditions)">Klasifikasi 8 Kartu Tugas SPLDV (Kondisi Batas)</strong>
+            </div>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <p data-id="<strong>Aktivitas:</strong> Meminta kelompok mengklasifikasikan 8 kartu tugas SPLDV ke dalam kategori (A) AI aman, (B) AI boleh dengan pembingkaian, (C) AI berpotensi menghambat." data-en="<strong>Activity:</strong> Ask groups to classify 8 SPLDV task cards into (A) Safe AI, (B) AI allowed with framing, (C) AI potentially hindering.">
+              <strong>Aktivitas:</strong> Meminta kelompok mengklasifikasikan 8 kartu tugas SPLDV ke dalam kategori (A) AI aman, (B) AI boleh dengan pembingkaian, (C) AI berpotensi menghambat.
+            </p>
+
+            <div class="table-responsive">
+              <table class="hlt-table">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Isi Tugas pada Kartu</th>
+                    <th>Tipe Kognitif</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>Selesaikan 3x + 2y = 12 dan x - y = 1 dengan metode eliminasi.</td><td>Prosedural</td></tr>
+                  <tr><td>2</td><td>Buktikan bahwa (2, 3) adalah solusi dari sistem 2x+y=7 dan x+y=5.</td><td>Verifikasi</td></tr>
+                  <tr><td>3</td><td>Jelaskan secara konseptual mengapa metode substitusi dan eliminasi menghasilkan solusi yang sama.</td><td>Konseptual</td></tr>
+                  <tr><td>4</td><td>Temukan kesalahan dalam langkah eliminasi berikut: [diberikan langkah salah].</td><td>Identifikasi Error</td></tr>
+                  <tr><td>5</td><td>Gambarkan secara geometris apa artinya dua garis tidak memiliki titik potong.</td><td>Visual/Konseptual</td></tr>
+                  <tr><td>6</td><td>Buat soal cerita SPLDV tentang harga bakso dan mie ayam di kantin sekolah.</td><td>Kreatif/Kontekstual</td></tr>
+                  <tr><td>7</td><td>Rancang satu pertanyaan asesmen yang menguji PEMAHAMAN, bukan sekadar kemampuan menghitung.</td><td>Pedagogis</td></tr>
+                  <tr><td>8</td><td>Kapan SPLDV memiliki solusi unik, tak terhingga, atau tidak ada? Jelaskan dengan grafik.</td><td>Higher-Order</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Saat klasifikasi tugas, kelompok mengklasifikasikan hampir semua tugas sebagai Kategori C (AI tidak boleh digunakan)." data-en="During task classification, groups classify almost all tasks as Category C (AI forbidden).">
+                  Saat klasifikasi tugas, kelompok mengklasifikasikan hampir semua tugas sebagai Kategori C (AI tidak boleh digunakan).
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Ajukan skenario moderat: 'Seorang siswa sudah berjuang 20 menit dan frustrasi, tapi belum bisa memulai. Apakah ini saat yang tepat untuk bantuan AI? Jika ya, AI dengan peran apa?' Eksplorasi AI sebagai tutor, bukan solver." data-en="Prompt moderate scenario: 'A student has struggled 20 mins and feels frustrated... Is this appropriate for AI help? If yes, what AI role?' Explore AI as tutor, not solver.">
+                  Ajukan skenario moderat: 'Seorang siswa sudah berjuang 20 menit dan frustrasi, tapi belum bisa memulai. Apakah ini saat yang tepat untuk bantuan AI? Jika ya, AI dengan peran apa?' Eksplorasi AI sebagai tutor, bukan solver.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P1 ITEM 4 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <div>
+              <span class="badge-tag" style="margin-right:8px;">P1.4</span>
+              <strong data-id="Penyusunan Kartu Kriteria &amp; Kerangka Kondisi Batas SPLDV" data-en="AI Criteria Card &amp; SPLDV Boundary Framework Formulation">Penyusunan Kartu Kriteria &amp; Kerangka Kondisi Batas SPLDV</strong>
+            </div>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <div class="revisi-badge" data-id="REVISI: Pengisian Template 2 Dilanjutkan Tugas Mandiri sebelum P2" data-en="REVISION: Template 2 Completion Continued as Homework before P2">REVISI: Pengisian Template 2 Dilanjutkan Tugas Mandiri sebelum P2</div>
+
+            <p data-id="<strong>Aktivitas:</strong> Membimbing penyusunan Kartu Kriteria Evaluasi AI (Template 1) dan Kerangka Kondisi Batas Awal (Template 2) secara individual." data-en="<strong>Activity:</strong> Guide individual formulation of AI Evaluation Criteria Card (Template 1) and Initial Boundary Conditions Framework (Template 2).">
+              <strong>Aktivitas:</strong> Membimbing penyusunan Kartu Kriteria Evaluasi AI (Template 1) dan Kerangka Kondisi Batas Awal (Template 2) secara individual.
+            </p>
+
+            <div class="table-responsive">
+              <table class="hlt-table">
+                <thead>
+                  <tr>
+                    <th>Jenis Tugas SPLDV</th>
+                    <th>AI Aman (Contoh Cara)</th>
+                    <th>AI Tidak Disarankan (Alasan)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Prosedural (hitung)</td><td>AI mengecek jawaban akhir siswa</td><td>AI menyelesaikan — menghilangkan proses berpikir</td></tr>
+                  <tr><td>Konseptual (jelaskan)</td><td>AI mengajukan pertanyaan pemandu</td><td>AI memberi penjelasan langsung — memotong konstruksi pemahaman</td></tr>
+                  <tr><td>Error Identification</td><td>AI mengkonfirmasi apakah siswa sudah menemukan kesalahan</td><td>AI langsung menunjuk kesalahan — menghilangkan tantangan kognitif</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Kartu kriteria dan kerangka kondisi batas mahasiswa sangat generik, tidak spesifik pada SPLDV." data-en="Student criteria cards and boundary frameworks are too generic, not specific to SPLDV.">
+                  Kartu kriteria dan kerangka kondisi batas mahasiswa sangat generik, tidak spesifik pada SPLDV.
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Minta mahasiswa memilih satu kriteria mereka dan mengujinya dengan salah satu tugas dari kartu yang sudah diklasifikasikan: 'Apakah kriteria ini membantu Anda memutuskan klasifikasi tugas ini? Jika tidak, revisi kriterianya agar lebih operasional'." data-en="Ask student to pick one criteria and test it against classified task cards: 'Does this criteria help you decide task classification? If not, operationalize it'.">
+                  Minta mahasiswa memilih satu kriteria mereka dan mengujinya dengan salah satu tugas dari kartu yang sudah diklasifikasikan: 'Apakah kriteria ini membantu Anda memutuskan klasifikasi tugas ini? Jika tidak, revisi kriterianya agar lebih operasional'.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -118,9 +395,461 @@
     <!-- PERTEMUAN 2 SECTION -->
     <section id="p2-sec" class="hlt-section" style="display:none;">
       <div class="card card-secondary">
-        <div style="display:flex; justify-space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
-          <h2 data-id="Pertemuan 2: Merancang Aktivitas &amp; Laboratorium Prompt Pedagogis" data-en="Session 2: Activity Design &amp; Pedagogical Prompt Lab">Pertemuan 2: Merancang Aktivitas &amp; Laboratorium Prompt Pedagogis</h2>
-          <span class="badge-tag gold" data-id="Lembar Kerja 2" data-en="Worksheet 2">Lembar Kerja 2</span>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
+          <h2 data-id="Pertemuan 2: Merancang Aktivitas &amp; Lab Prompt Pedagogis" data-en="Session 2: Activity Design &amp; Pedagogical Prompt Lab">Pertemuan 2: Merancang Aktivitas &amp; Lab Prompt Pedagogis</h2>
+          <span class="badge-tag gold" data-id="Durasi: 150 Menit" data-en="Duration: 150 Mins">Durasi: 150 Menit</span>
+        </div>
+
+        <!-- P2 ITEM 1 -->
+        <div class="accordion-item active" style="margin-bottom:16px;">
+          <div class="accordion-header">
+            <div>
+              <span class="badge-tag gold" style="margin-right:8px;">P2.1</span>
+              <strong data-id="Lokakarya Rancangan Aktivitas SPLDV Terintegrasi AI (9 Komponen)" data-en="AI-Integrated SPLDV Activity Design Workshop (9 Components)">Lokakarya Rancangan Aktivitas SPLDV Terintegrasi AI (9 Komponen)</strong>
+            </div>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <p data-id="<strong>Aktivitas:</strong> Melaksanakan lokakarya kelompok merancang aktivitas SPLDV terintegrasi AI (Kelompok A: Substitusi Konseptual, Kelompok B: Eliminasi Identifikasi Error, Kelompok C: Geometris Representasi Ganda, Kelompok D: Pemodelan Soal Cerita Indonesia)." data-en="<strong>Activity:</strong> Conduct group workshop designing AI-integrated SPLDV activities (Group A: Conceptual Substitution, Group B: Elimination Error Identification, Group C: Geometric Multiple Representations, Group D: Indonesia Story Problem Modeling).">
+              <strong>Aktivitas:</strong> Melaksanakan lokakarya kelompok merancang aktivitas SPLDV terintegrasi AI (Kelompok A: Substitusi Konseptual, Kelompok B: Eliminasi Identifikasi Error, Kelompok C: Geometris Representasi Ganda, Kelompok D: Pemodelan Soal Cerita Indonesia).
+            </p>
+
+            <div class="table-responsive">
+              <table class="hlt-table">
+                <thead>
+                  <tr>
+                    <th>Komponen Rancangan</th>
+                    <th>Spesifikasi Pengisian Kelompok</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Topik SPLDV</td><td>Misal: Metode Substitusi — Pemahaman Konseptual</td></tr>
+                  <tr><td>Tujuan Belajar</td><td>Siswa mampu menjelaskan MENGAPA substitusi bekerja, bukan hanya HOW</td></tr>
+                  <tr><td>Peran AI dalam Aktivitas</td><td>Tutor Socratik: AI mengajukan pertanyaan, TIDAK memberikan jawaban</td></tr>
+                  <tr><td>Prompt AI yang Digunakan</td><td>'Bertindaklah sebagai tutor Socratik. Seorang siswa kelas VIII ...'</td></tr>
+                  <tr><td>Mediasi Guru (Sebelum AI)</td><td>Guru memastikan siswa sudah mencoba sendiri minimal 5 menit</td></tr>
+                  <tr><td>Mediasi Guru (Selama AI)</td><td>Guru memantau — jika siswa copy-paste, tanyakan: 'Apa yang baru kamu pahami?'</td></tr>
+                  <tr><td>Mediasi Guru (Setelah AI)</td><td>Guru meminta 1 siswa menjelaskan ulang dengan kata-kata sendiri</td></tr>
+                  <tr><td>Agensi Siswa</td><td>Siswa yang merumuskan pertanyaan ke AI, bukan guru</td></tr>
+                  <tr><td>Prediksi Hambatan &amp; ADP</td><td>Siswa minta AI menjawab langsung &rarr; Tanya: 'Coba jelaskan jawabannya tanpa melihat layar.'</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Rancangan aktivitas kelompok menempatkan AI sebagai pelaku utama (AI menjelaskan, AI menyelesaikan) dan peran siswa pasif." data-en="Group activity designs place AI as main actor (AI explains, AI solves) leaving students passive.">
+                  Rancangan aktivitas kelompok menempatkan AI sebagai pelaku utama (AI menjelaskan, AI menyelesaikan) dan peran siswa pasif.
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Tanyakan: 'Dalam rancangan ini, siapa yang belajar — siswa atau AI?' Minta kelompok mengidentifikasi satu titik dalam aktivitas di mana peran AI dan peran siswa dapat ditukar." data-en="Ask: 'In this design, who is learning — student or AI?' Request groups to identify a point where AI and student roles can be swapped.">
+                  Tanyakan: 'Dalam rancangan ini, siapa yang belajar — siswa atau AI?' Minta kelompok mengidentifikasi satu titik dalam aktivitas di mana peran AI dan peran siswa dapat ditukar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P2 ITEM 2 -->
+        <div class="accordion-item" style="margin-bottom:16px;">
+          <div class="accordion-header">
+            <div>
+              <span class="badge-tag gold" style="margin-right:8px;">P2.2</span>
+              <strong data-id="Lab Prompt: Formula Rekayasa Prompt Pedagogis 5 Komponen" data-en="Prompt Lab: 5-Component Pedagogical Prompt Formula">Lab Prompt: Formula Rekayasa Prompt Pedagogis 5 Komponen</strong>
+            </div>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <div class="revisi-badge" data-id="REVISI: Jembatan Reflektif A1 &rarr; Lab Prompt (5 Menit)" data-en="REVISION: Reflective Bridge A1 &rarr; Prompt Lab (5 Mins)">REVISI: Jembatan Reflektif A1 &rarr; Lab Prompt (5 Menit)</div>
+
+            <p data-id="<strong>Jembatan Reflektif A1 &rarr; Lab Prompt (5 Menit):</strong> Sebelum masuk Lab Prompt, kelompok menjawab dua pertanyaan lisan: (1) Peran AI apa yang kalian bayangkan dalam rancangan? (2) Apa satu hal yang belum jelas tentang cara AI harus berperilaku?" data-en="<strong>Reflective Bridge A1 &rarr; Prompt Lab (5 Mins):</strong> Before starting Lab, groups orally answer two questions: (1) What AI role do you envision in your design? (2) What is one unclear aspect of how AI should behave?">
+              <strong>Jembatan Reflektif A1 &rarr; Lab Prompt (5 Menit):</strong> Sebelum masuk Lab Prompt, kelompok menjawab dua pertanyaan lisan: (1) Peran AI apa yang kalian bayangkan dalam rancangan? (2) Apa satu hal yang belum jelas tentang cara AI harus berperilaku?
+            </p>
+
+            <div class="code-box">
+              FORMULA REKAYASA PROMPT PEDAGOGIS (5 KOMPONEN):<br>
+              <strong>[PERAN AI] + [KONTEN SPESIFIK] + [KARAKTER PELAJAR] + [BATASAN PEDAGOGIS] + [FORMAT KELUARAN]</strong>
+            </div>
+
+            <div class="table-responsive">
+              <table class="hlt-table">
+                <thead>
+                  <tr>
+                    <th>Jenis Prompt</th>
+                    <th>Teks Prompt</th>
+                    <th>Dampak / Masalah Pedagogis</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span style="color:var(--red); font-weight:700;">❌ Generik</span></td>
+                    <td>Jelaskan cara menyelesaikan 2x+y=7 dan x+y=5.</td>
+                    <td>AI langsung menjawab — menghilangkan proses berpikir siswa.</td>
+                  </tr>
+                  <tr>
+                    <td><span style="color:var(--green); font-weight:700;">✅ Terstruktur</span></td>
+                    <td>Bertindaklah sebagai tutor Socratik matematika SMP. Siswa kelas VIII kebingungan MENGAPA pada langkah eliminasi kita mengalikan salah satu persamaan. Jangan beri jawaban. Ajukan 3 pertanyaan bertahap. Format: daftar bernomor.</td>
+                    <td>AI memfasilitasi berpikir — bukan menggantikannya.</td>
+                  </tr>
+                  <tr>
+                    <td><span style="color:var(--secondary); font-weight:700;">✅ Pemeriksa Error</span></td>
+                    <td>Seorang siswa kelas VIII menyelesaikan SPLDV dan mendapat: [tempel langkah siswa]. Jangan tunjukkan jawaban benar. Berikan satu pertanyaan pemandu untuk menemukan kesalahan.</td>
+                    <td>AI sebagai scaffold pendukung evaluasi kritis.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Mahasiswa menulis prompt yang sekadar memformat ulang soal SPLDV untuk AI (misal: 'Jelaskan cara menyelesaikan 2x + y = 5...')." data-en="Students write prompts that merely reformat the SPLDV question for AI.">
+                  Mahasiswa menulis prompt yang sekadar memformat ulang soal SPLDV untuk AI (misal: 'Jelaskan cara menyelesaikan 2x + y = 5...').
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Tunjukkan perbedaan output antara prompt generik dan prompt dengan formula terstruktur pada soal yang sama. Tanyakan: 'Mana yang lebih berguna untuk tujuan pedagogis Anda?'" data-en="Show output difference between generic and structured prompt for same task. Ask: 'Which is more useful for your pedagogical goal?'">
+                  Tunjukkan perbedaan output antara prompt generik dan prompt dengan formula terstruktur pada soal yang sama. Tanyakan: 'Mana yang lebih berguna untuk tujuan pedagogis Anda?'
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P2 ITEM 3 -->
+        <div class="accordion-item" style="margin-bottom:16px;">
+          <div class="accordion-header">
+            <div>
+              <span class="badge-tag gold" style="margin-right:8px;">P2.3</span>
+              <strong data-id="Generator Soal Kontekstual Indonesia &amp; 4 Prompt Wajib" data-en="Indonesia Contextual Item Generator &amp; 4 Mandatory Prompts">Generator Soal Kontekstual Indonesia &amp; 4 Prompt Wajib</strong>
+            </div>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <p data-id="<strong>Empat Prompt Wajib Dikembangkan:</strong> (1) Tutor Socratik SPLDV, (2) Pemeriksa Kesalahan, (3) Generator Soal Kontekstual Indonesia (warung, ojek, UMKM), (4) Prompt Bebas Pilihan." data-en="<strong>Four Mandatory Prompts to Develop:</strong> (1) Socratic SPLDV Tutor, (2) Error Checker, (3) Indonesia Contextual Item Generator (food stall, ojek, local business), (4) Free Choice Prompt.">
+              <strong>Empat Prompt Wajib Dikembangkan:</strong> (1) Tutor Socratik SPLDV, (2) Pemeriksa Kesalahan, (3) Generator Soal Kontekstual Indonesia (warung, ojek, UMKM), (4) Prompt Bebas Pilihan.
+            </p>
+
+            <div class="table-responsive">
+              <table class="hlt-table">
+                <thead>
+                  <tr>
+                    <th>Versi Prompt</th>
+                    <th>Teks Prompt</th>
+                    <th>Hasil AI &amp; Komentar Pedagogis</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span style="color:var(--red); font-weight:700;">❌ Tanpa Konteks Lokal</span></td>
+                    <td>Buat soal cerita SPLDV untuk siswa SMP.</td>
+                    <td>Tom has 5 apples and 3 oranges... (konteks Barat &rarr; siswa tidak terhubung secara emosional).</td>
+                  </tr>
+                  <tr>
+                    <td><span style="color:var(--green); font-weight:700;">✅ Konteks Indonesia</span></td>
+                    <td>Buat soal cerita SPLDV untuk siswa kelas VIII SMP di kota kecil Indonesia. Gunakan konteks familiar: harga makanan di warung, tarif ojek, atau UMKM. Angka realistis. Sertakan kunci.</td>
+                    <td>Warung Bu Sari menjual nasi goreng dan mie goreng. 2 nasi + 1 mie = Rp 35.000... (Relevan, autentik, bermakna).</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Mahasiswa kesulitan merancang prompt Generator Soal yang menghasilkan konteks autentik Indonesia (AI cenderung menghasilkan konteks Barat)." data-en="Students struggle to craft prompts producing authentic Indonesian contexts.">
+                  Mahasiswa kesulitan merancang prompt Generator Soal yang menghasilkan konteks autentik Indonesia (AI cenderung menghasilkan konteks Barat).
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Tunjukkan teknik spesifikasi konteks: tambahkan 'Gunakan konteks yang familiar bagi siswa SMP di Indonesia, seperti: harga bahan makanan di pasar tradisional, tarif ojek, harga produk UMKM lokal.'" data-en="Demonstrate context specification technique: add 'Use familiar Indonesian contexts: traditional market prices, ojek fares, local products.'">
+                  Tunjukkan teknik spesifikasi konteks: tambahkan 'Gunakan konteks yang familiar bagi siswa SMP di Indonesia, seperti: harga bahan makanan di pasar tradisional, tarif ojek, harga produk UMKM lokal.'
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P2 ITEM 4 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <div>
+              <span class="badge-tag gold" style="margin-right:8px;">P2.4</span>
+              <strong data-id="Tinjauan Sejawat (Peer Review) Prompt Pedagogis" data-en="Pedagogical Prompt Peer Review">Tinjauan Sejawat (Peer Review) Prompt Pedagogis</strong>
+            </div>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <p data-id="<strong>Aktivitas:</strong> Mahasiswa menukarkan Prompt Tutor Socratik dengan rekan, menguji di AI, dan mengisi 3 pertanyaan evaluasi: (1) Apakah prompt membantu siswa berpikir atau berpikir UNTUK siswa? (2) Apakah batasan dipatuhi? (3) Satu saran revisi spesifik. Diikuti 5 menit revisi." data-en="<strong>Activity:</strong> Swap Socratic prompt with peer, test in AI, fill 3 evaluation questions, follow up with 5-minute prompt revision.">
+              <strong>Aktivitas:</strong> Mahasiswa menukarkan Prompt Tutor Socratik dengan rekan, menguji di AI, dan mengisi 3 pertanyaan evaluasi: (1) Apakah prompt membantu siswa berpikir atau berpikir UNTUK siswa? (2) Apakah batasan dipatuhi? (3) Satu saran revisi spesifik. Diikuti 5 menit revisi.
+            </p>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Tinjauan sejawat menghasilkan penilaian yang seragam positif tanpa kritik substantif." data-en="Peer review produces uniformly positive feedback without substantive critique.">
+                  Tinjauan sejawat menghasilkan penilaian yang seragam positif tanpa kritik substantif.
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Berikan pertanyaan panduan tertulis: 'Coba jalankan prompt ini di AI. Apakah output yang dihasilkan membantu siswa berpikir atau memberikan jawaban langsung? Tuliskan contoh spesifik dari output AI sebagai bukti evaluasi Anda'." data-en="Provide written prompt questions: 'Run prompt in AI. Does output prompt thinking or give direct answer? Write specific quote as proof'.">
+                  Berikan pertanyaan panduan tertulis: 'Coba jalankan prompt ini di AI. Apakah output yang dihasilkan membantu siswa berpikir atau memberikan jawaban langsung? Tuliskan contoh spesifik dari output AI sebagai bukti evaluasi Anda'.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PERTEMUAN 3 SECTION -->
+    <section id="p3-sec" class="hlt-section" style="display:none;">
+      <div class="card card-primary" style="border-left:4px solid var(--gold);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
+          <h2 data-id="Pertemuan 3: Merefleksi &amp; Memformalkan Kerangka AI-Pedagogik" data-en="Session 3: Reflecting &amp; Formalizing AI-Pedagogical Framework">Pertemuan 3: Merefleksi &amp; Memformalkan Kerangka AI-Pedagogik</h2>
+          <span class="badge-tag gold" data-id="Durasi: 150 Menit" data-en="Duration: 150 Mins">Durasi: 150 Menit</span>
+        </div>
+
+        <!-- P3 ITEM 1 -->
+        <div class="accordion-item active" style="margin-bottom:16px;">
+          <div class="accordion-header">
+            <div>
+              <span class="badge-tag gold" style="margin-right:8px;">P3.1</span>
+              <strong data-id="Simulasi Mengajar Mikro &amp; Komplikasi 1 (Penjelasan AI Tidak Efisien)" data-en="Micro-Teaching Simulation &amp; Complication 1 (Inefficient AI Steps)">Simulasi Mengajar Mikro &amp; Komplikasi 1 (Penjelasan AI Tidak Efisien)</strong>
+            </div>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <div class="revisi-badge" data-id="REVISI: Lembar Observer Diperluas dari 2 &rarr; 5 Kolom HLT vs ALT" data-en="REVISION: Observer Sheet Expanded from 2 &rarr; 5 Columns HLT vs ALT">REVISI: Lembar Observer Diperluas dari 2 &rarr; 5 Kolom HLT vs ALT</div>
+
+            <p data-id="<strong>Komplikasi 1 (Menit ke-10):</strong> Output AI proyektor benar tapi tidak efisien (7 langkah eliminasi untuk 2x+3y=12 dan x-y=2)." data-en="<strong>Complication 1 (Minute 10):</strong> AI output on projector is correct but inefficient (7 elimination steps for 2x+3y=12 and x-y=2).">
+              <strong>Komplikasi 1 (Menit ke-10):</strong> Output AI proyektor benar tapi tidak efisien (7 langkah eliminasi untuk 2x+3y=12 dan x-y=2).
+            </p>
+
+            <p style="margin-top:10px;"><strong data-id="Format Lembar Observer 5 Kolom (Revisi Operational):" data-en="5-Column Observer Sheet Format (Operational Revision):">Format Lembar Observer 5 Kolom (Revisi Operational):</strong></p>
+            <div class="table-responsive">
+              <table class="hlt-table">
+                <thead>
+                  <tr>
+                    <th>No</th>
+                    <th>Indikator Perilaku</th>
+                    <th>Prediksi HLT</th>
+                    <th>Respons Aktual</th>
+                    <th>Kesesuaian (✓/≈/✗)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>Diam / tidak merespons, menyerahkan ke AI</td><td>Perlu pengembangan</td><td>[Dicatat observer]</td><td>[Diisi]</td></tr>
+                  <tr><td>2</td><td>Langsung bilang 'AI salah' tanpa verifikasi</td><td>Perlu pengembangan — tidak berbasis bukti</td><td>[Dicatat observer]</td><td>[Diisi]</td></tr>
+                  <tr><td>3</td><td>Mengajak kelas mendiskusikan: 'Ada cara lebih efisien?'</td><td>Sangat baik — teachable moment</td><td>[Dicatat observer]</td><td>[Diisi]</td></tr>
+                  <tr><td>4</td><td>Membandingkan langkah AI dengan papan tulis</td><td>Baik — verifikasi matematis</td><td>[Dicatat observer]</td><td>[Diisi]</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Mahasiswa 'guru' diam atau menyerahkan sepenuhnya kepada AI saat Komplikasi 1 diperkenalkan." data-en="Student 'teacher' freezes or leaves response entirely to AI when Complication 1 occurs.">
+                  Mahasiswa 'guru' diam atau menyerahkan sepenuhnya kepada AI saat Komplikasi 1 diperkenalkan.
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Setelah simulasi, debrief tanpa menghakimi: 'Apa yang terjadi di pikiran Anda saat melihat penjelasan AI itu? Apa yang menghalangi Anda merespons?' Lalu tanyakan persiapan sebelum mengajar." data-en="After simulation, debrief non-judgmentally: 'What went through your mind seeing AI output? What blocked your response?' Then ask about prep.">
+                  Setelah simulasi, debrief tanpa menghakimi: 'Apa yang terjadi di pikiran Anda saat melihat penjelasan AI itu? Apa yang menghalangi Anda merespons?' Lalu tanyakan persiapan sebelum mengajar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P3 ITEM 2 -->
+        <div class="accordion-item" style="margin-bottom:16px;">
+          <div class="accordion-header">
+            <div>
+              <span class="badge-tag gold" style="margin-right:8px;">P3.2</span>
+              <strong data-id="Komplikasi Real-Time 2, 3 (AI Salah), &amp; 4 (Resistensi Kognitif)" data-en="Real-Time Complications 2, 3 (Math Error), &amp; 4 (Cognitive Resistance)">Komplikasi Real-Time 2, 3 (AI Salah), &amp; 4 (Resistensi Kognitif)</strong>
+            </div>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <div class="revisi-badge" data-id="REVISI: Tambahan Komplikasi 3 (AI Salah Matematis) &amp; 4 (Resistensi Kognitif Siswa)" data-en="REVISION: Added Complication 3 (Math Error) &amp; 4 (Student Resistance)">REVISI: Tambahan Komplikasi 3 (AI Salah Matematis) &amp; 4 (Resistensi Kognitif Siswa)</div>
+
+            <div class="card-grid-2" style="margin-bottom:14px;">
+              <div style="background:rgba(217, 119, 6, 0.08); border:1px solid rgba(217, 119, 6, 0.25); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--gold); font-size:0.85rem;">Komplikasi 2 (Menit 15):</strong>
+                <p style="font-size:0.83rem; color:var(--text-muted); margin-top:4px;">Siswa angkat HP: 'ChatGPT bilang x=3, y=1 untuk 3x+y=10, x+2y=7. Tapi Bapak dapat x=2, y=3. Mana yang benar?' (AI benar &rarr; menguji verifikasi matematis guru).</p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.08); border:1px solid rgba(220, 38, 38, 0.25); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;">Komplikasi 3 (Tambahan Revisi):</strong>
+                <p style="font-size:0.83rem; color:var(--text-muted); margin-top:4px;"><strong>AI SALAH MATEMATIS:</strong> AI proyektor beri x=3, y=4 untuk 2x+3y=12, x-y=2 (Jawaban benar 18/5, 8/5). <em>ADP:</em> Substitusi bersama di papan &rarr; Teachable moment literasi AI.</p>
+              </div>
+            </div>
+
+            <div style="background:rgba(13, 148, 136, 0.08); border:1px solid rgba(13, 148, 136, 0.25); padding:12px; border-radius:var(--radius-sm); margin-bottom:14px;">
+              <strong style="color:var(--secondary); font-size:0.85rem;">Komplikasi 4 (Tambahan Revisi — Resistensi Kognitif):</strong>
+              <p style="font-size:0.83rem; color:var(--text-muted); margin-top:4px;">Siswa menolak berpikir mandiri: 'Pak, kenapa tidak langsung tanya AI saja? Kan lebih cepat.' <em>ADP:</em> Balikkan pertanyaan: 'Boleh — tanya AI sekarang. Lalu ceritakan MENGAPA langkah AI benar. Kalau bisa jelaskan, kamu sudah paham!'</p>
+            </div>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Mahasiswa 'guru' kalah oleh komplikasi real-time dan tidak tahu cara merespons tanpa kehilangan momentum." data-en="Student 'teacher' gets overwhelmed by real-time complications.">
+                  Mahasiswa 'guru' kalah oleh komplikasi real-time dan tidak tahu cara merespons tanpa kehilangan momentum.
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Berikan tiga opsi respons saat debrief: (A) Abaikan, (B) Gunakan sebagai verifikasi reliabilitas AI di papan, (C) Minta siswa jelaskan proses berpikir. Tanya opsi mana paling sesuai." data-en="Offer 3 response options during debrief: (A) Ignore, (B) Verify AI on board, (C) Ask student to explain thinking.">
+                  Berikan tiga opsi respons saat debrief: (A) Abaikan, (B) Gunakan sebagai verifikasi reliabilitas AI di papan, (C) Minta siswa jelaskan proses berpikir. Tanya opsi mana paling sesuai.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P3 ITEM 3 -->
+        <div class="accordion-item" style="margin-bottom:16px;">
+          <div class="accordion-header">
+            <div>
+              <span class="badge-tag gold" style="margin-right:8px;">P3.3</span>
+              <strong data-id="Analisis Retrospektif Artefak P1 &rarr; P3 (Perubahan Pemikiran)" data-en="Retrospective Analysis of Artifacts P1 &rarr; P3 (Thinking Shift)">Analisis Retrospektif Artefak P1 &rarr; P3 (Perubahan Pemikiran)</strong>
+            </div>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <p data-id="<strong>Aktivitas:</strong> Meminta mahasiswa membandingkan Kartu Kriteria P1 dengan pemahaman saat ini lalu mengisi lembar 4 kolom: (1) Kriteria P1, (2) Status (✓ Dikonfirmasi / ✏ Direvisi / ★ Baru), (3) Versi Baru, (4) Pengalaman HLT yang Mendorong Perubahan." data-en="<strong>Activity:</strong> Ask students to compare P1 Criteria Card with current understanding in 4-column sheet: (1) P1 Criteria, (2) Status, (3) New Version, (4) Driving HLT Experience.">
+              <strong>Aktivitas:</strong> Meminta mahasiswa membandingkan Kartu Kriteria P1 dengan pemahaman saat ini lalu mengisi lembar 4 kolom: (1) Kriteria P1, (2) Status (✓ Dikonfirmasi / ✏ Direvisi / ★ Baru), (3) Versi Baru, (4) Pengalaman HLT yang Mendorong Perubahan.
+            </p>
+
+            <div style="background:rgba(22, 163, 74, 0.06); border:1px solid rgba(22, 163, 74, 0.25); padding:12px; border-radius:var(--radius-sm); margin:10px 0;">
+              <strong style="color:var(--green); font-size:0.85rem;">Contoh Refleksi Kuat:</strong>
+              <p style="font-size:0.83rem; color:var(--text-muted); margin-top:4px;"><em>Kriteria Awal (P1):</em> 'AI bagus untuk menjelaskan langkah prosedural.' &rarr; <em>Status:</em> ✏ Direvisi &rarr; <em>Versi Baru:</em> 'AI berguna untuk variasi soal, tapi penjelasan prosedural AI sering tidak disertai justifikasi MENGAPA.' &rarr; <em>Pengalaman:</em> Pertemuan 1 Aktivitas 1 saat membandingkan teks ChatGPT dan buku teks.</p>
+            </div>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Analisis retrospektif artefak menunjukkan sedikit perubahan — mahasiswa merasa kriteria mereka sudah cukup baik dari awal." data-en="Retrospective artifact analysis shows little change — students feel initial criteria were sufficient.">
+                  Analisis retrospektif artefak menunjukkan sedikit perubahan — mahasiswa merasa kriteria mereka sudah cukup baik dari awal.
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Ajak mahasiswa membandingkan BAHASA yang digunakan: 'Apakah Anda menggunakan kata-kata yang sama di Pertemuan 1 dan sekarang? Apakah alasan di balik kriteria Anda berubah, meskipun kesimpulannya mirip?'" data-en="Ask students to compare LANGUAGE used: 'Did you use same words in P1? Did reasons behind criteria change even if conclusion looks similar?'">
+                  Ajak mahasiswa membandingkan BAHASA yang digunakan: 'Apakah Anda menggunakan kata-kata yang sama di Pertemuan 1 dan sekarang? Apakah alasan di balik kriteria Anda berubah, meskipun kesimpulannya mirip?'
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- P3 ITEM 4 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <div>
+              <span class="badge-tag gold" style="margin-right:8px;">P3.4</span>
+              <strong data-id="Penyusunan Kerangka AI-Pedagogik Pribadi 1 Halaman (4 Komponen)" data-en="Formulation of 1-Page Personal AI-Pedagogical Framework (4 Components)">Penyusunan Kerangka AI-Pedagogik Pribadi 1 Halaman (4 Komponen)</strong>
+            </div>
+            <span>▼</span>
+          </div>
+          <div class="accordion-body">
+            <p data-id="<strong>4 Komponen Wajib Kerangka AI-Pedagogik Pribadi:</strong>" data-en="<strong>4 Mandatory Components of Personal AI-Pedagogical Framework:</strong>">
+              <strong>4 Komponen Wajib Kerangka AI-Pedagogik Pribadi:</strong>
+            </p>
+
+            <div class="table-responsive">
+              <table class="hlt-table">
+                <thead>
+                  <tr>
+                    <th>Komponen</th>
+                    <th>Panduan Pengisian</th>
+                    <th>Contoh Isian Konkret</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1. PRINSIP AI-TPACK SAYA (&ge;4 Prinsip)</td>
+                    <td>Format: 'Saya percaya bahwa AI dalam matematika ... karena [bukti dari HLT: Pertemuan ... Aktivitas ...]'</td>
+                    <td>AI paling efektif sebagai penanya, bukan penjawab, karena di P2A2 output Tutor Socratik jauh lebih mendorong berpikir.</td>
+                  </tr>
+                  <tr>
+                    <td>2. KONDISI BATAS SPLDV SAYA</td>
+                    <td>Referensi ke klasifikasi 8 kartu tugas di P1A3</td>
+                    <td>Tugas konseptual 'jelaskan MENGAPA' tidak boleh diselesaikan AI — hanya AI bertipe 'pemandu' yang boleh digunakan.</td>
+                  </tr>
+                  <tr>
+                    <td>3. PROMPT ANDALAN SAYA</td>
+                    <td>Satu prompt dari perpustakaan P2 yang paling Anda yakini efektif beserta alasannya</td>
+                    <td>[Tempel prompt Tutor Socratik terbaik dari P2] — Alasan: prompt ini membuat AI tidak pernah memberikan jawaban langsung.</td>
+                  </tr>
+                  <tr>
+                    <td>4. PROTOKOL DARURAT SAYA</td>
+                    <td>Langkah spesifik jika AI salah/tidak tepat di depan kelas (dari simulasi P3)</td>
+                    <td>Langkah 1: Tetap tenang, katakan 'Mari kita cek bersama'. Langkah 2: Verifikasi di papan. Langkah 3: Teachable moment literasi AI.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="card-grid-2">
+              <div style="background:rgba(79, 70, 229, 0.05); border:1px solid rgba(79, 70, 229, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--primary); font-size:0.85rem;" data-id="Kemungkinan Respons Mahasiswa:" data-en="Predicted Student Response:">Kemungkinan Respons Mahasiswa:</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Kerangka AI-Pedagogik Pribadi yang dihasilkan terlalu abstrak dan tidak mengandung referensi pengalaman HLT spesifik." data-en="Generated Personal Frameworks are too abstract, lacking specific HLT references.">
+                  Kerangka AI-Pedagogik Pribadi yang dihasilkan terlalu abstrak dan tidak mengandung referensi pengalaman HLT spesifik.
+                </p>
+              </div>
+              <div style="background:rgba(220, 38, 38, 0.05); border:1px solid rgba(220, 38, 38, 0.2); padding:12px; border-radius:var(--radius-sm);">
+                <strong style="color:var(--red); font-size:0.85rem;" data-id="Antisipasi Didaktis Pedagogis (ADP):" data-en="Didactical Pedagogical Anticipation (ADP):">Antisipasi Didaktis Pedagogis (ADP):</strong>
+                <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Minta mahasiswa memilih satu prinsip dan 'membuktikannya' dengan menyebut satu momen spesifik dari tiga pertemuan HLT: 'Pertemuan berapa? Aktivitas apa? Apa yang terjadi saat itu?'" data-en="Ask student to pick one principle and 'prove it' with specific HLT moment: 'Which session? Which activity? What happened?'">
+                  Minta mahasiswa memilih satu prinsip dan 'membuktikannya' dengan menyebut satu momen spesifik dari tiga pertemuan HLT: 'Pertemuan berapa? Aktivitas apa? Apa yang terjadi saat itu?'
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VALIDASI SECTION -->
+    <section id="val-sec" class="hlt-section" style="display:none;">
+      <div class="card card-primary">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap;">
+          <h2 data-id="Rubrik &amp; Aspek Validasi Pakar HLT" data-en="Expert Validation Rubric &amp; Aspects for HLT">Rubrik &amp; Aspek Validasi Pakar HLT</h2>
+          <span class="badge-tag" data-id="Lawshe CVR &ge; 0.56" data-en="Lawshe CVR &ge; 0.56">Lawshe CVR &ge; 0.56</span>
+        </div>
+        <p style="color:var(--text-muted); margin-bottom:20px;" data-id="Instrumen validasi pakar diisi oleh 3 pakar validator pendidikan matematika &amp; teknologi pembelajaran pada skala 1-4." data-en="Expert validation rubric evaluated by 3 mathematics &amp; educational technology experts on 1-4 scale.">
+          Instrumen validasi pakar diisi oleh 3 pakar validator pendidikan matematika &amp; teknologi pembelajaran pada skala 1-4.
+        </p>
+
+        <div class="table-responsive">
+          <table class="hlt-table">
+            <thead>
+              <tr>
+                <th>Kode Aspek</th>
+                <th>Aspek Penilaian Validitas HLT</th>
+                <th>Cakupan Evaluasi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Aspek A</strong></td><td>Keselarasan Tujuan Pembelajaran &amp; Domain AI-TPACK</td><td>P1, P2, P3</td></tr>
+              <tr><td><strong>Aspek B</strong></td><td>Kesesuaian Aktivitas dengan Level Kognitif Mahasiswa</td><td>P1 A3, P2 A1</td></tr>
+              <tr><td><strong>Aspek C</strong></td><td>Kelengkapan &amp; Ketepatan Antisipasi Didaktis Pedagogis (ADP)</td><td>Semua Pertemuan</td></tr>
+              <tr><td><strong>Aspek D</strong></td><td>Validitas Instrumen Pengumpulan Data ALT</td><td>Semua Pertemuan</td></tr>
+              <tr><td><strong>Aspek E ⚠️</strong></td><td>Koherensi &amp; Kelayakan Format 3 Pertemuan vs 8 Pertemuan</td><td>Keseluruhan HLT</td></tr>
+              <tr><td><strong>Aspek F</strong></td><td>Kesesuaian Pemilihan Konteks SPLDV sebagai Kendaraan AI-TPACK</td><td>Semua Pertemuan</td></tr>
+              <tr><td><strong>Aspek G</strong></td><td>Kelayakan Formula Prompt Pedagogis (5 Komponen)</td><td>P2 A2-A3</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -128,7 +857,7 @@
   </main>
 
   <footer class="suite-footer">
-    <p><strong data-id="HLT AI-TPACK Siklus 1 Interaktif" data-en="Interactive AI-TPACK HLT Cycle 1">HLT AI-TPACK Siklus 1 Interaktif</strong> &middot; DDR &copy; 2026</p>
+    <p><strong data-id="HLT AI-TPACK Siklus 1 Interaktif (Revisi)" data-en="Interactive AI-TPACK HLT Cycle 1 (Revised)">HLT AI-TPACK Siklus 1 Interaktif (Revisi)</strong> &middot; DDR &copy; 2026</p>
     <p style="margin-top:4px; font-size:0.8rem; color:var(--text-dim);" data-id="Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban" data-en="Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban">Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban</p>
   </footer>
 
