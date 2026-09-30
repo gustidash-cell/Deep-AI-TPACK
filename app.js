@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSimulator();
   initFilters();
   initCardClassifier();
+  initEvalTabs();
 });
 
 /* --------------------------------------------------------------------------
@@ -479,3 +480,76 @@ function selectCardCategory(cardId, category) {
 function exportToPrint() {
   window.print();
 }
+
+/* --------------------------------------------------------------------------
+   9. EVALUATION TABS (PRE-TEST & POST-TEST)
+   -------------------------------------------------------------------------- */
+function initEvalTabs() {
+  const tabBtns = document.querySelectorAll('.eval-tab-btn');
+  if (!tabBtns.length) return;
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetTab = btn.getAttribute('data-tab');
+      if (targetTab) {
+        switchEvalTab(targetTab);
+      }
+    });
+  });
+}
+
+function switchEvalTab(tabId) {
+  const tabBtns = document.querySelectorAll('.eval-tab-btn');
+  const tabContents = document.querySelectorAll('.eval-tab-content');
+
+  tabBtns.forEach(btn => {
+    if (btn.getAttribute('data-tab') === tabId) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  tabContents.forEach(content => {
+    if (content.id === tabId) {
+      content.classList.add('active');
+    } else {
+      content.classList.remove('active');
+    }
+  });
+}
+
+/* --------------------------------------------------------------------------
+   10. IFRAME EXPAND & CLIPBOARD HELPERS
+   -------------------------------------------------------------------------- */
+function toggleIframeExpand(containerId, btn) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const isExpanded = container.classList.toggle('expanded');
+  const lang = getCurrentLang();
+  
+  if (btn) {
+    if (isExpanded) {
+      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 14 10 14 10 20"/><polyline points="20 10 14 10 14 4"/></svg> <span>${lang === 'en' ? 'Normal View' : 'Tinggi Standar'}</span>`;
+    } else {
+      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg> <span>${lang === 'en' ? 'Expand View' : 'Perbesar Tampilan'}</span>`;
+    }
+  }
+}
+
+function copyToClipboard(text, btn) {
+  const lang = getCurrentLang();
+  navigator.clipboard.writeText(text).then(() => {
+    if (btn) {
+      const originalHtml = btn.innerHTML;
+      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> <span>${lang === 'en' ? 'Copied!' : 'Tersalin!'}</span>`;
+      setTimeout(() => {
+        btn.innerHTML = originalHtml;
+      }, 2000);
+    }
+  }).catch(err => {
+    console.error('Failed to copy: ', err);
+  });
+}
+
+

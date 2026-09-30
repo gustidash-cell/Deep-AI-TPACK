@@ -41,13 +41,20 @@
    - Laboratorium Prompt & Perpustakaan 4 Prompt Wajib.
    - Formulir Tinjauan Sejawat (*Peer Review*) & Log Revisi 5 menit.
 
+6. **Instrumen Angket Pre-Test & Post-Test AI-TPACK (`Angket_Pre_Post_Test.html` & `index.html#angket-evaluasi`)**
+   - Live embed responsif Google Forms untuk Pre-Test (sebelum P1) dan Post-Test (setelah P3).
+   - Fitur salin tautan instan, ekspansi tinggi form (*comfortable/expanded view*), dan muat ulang dinamis.
+   - Matriks indikator 7 dimensi AI-TPACK (AI-TK, AI-TCK, AI-TPK, ADP, Etika AI).
+
 ---
 
-## 🎨 UI/UX & Standar Desain
+## 🎨 UI/UX Pro Max & OpenDesign System Standards
+- **Design System Toksik-Bebas (Anti-AI-Slop)**: Menggunakan Academic Cobalt Palette (`--primary: #1d4ed8`), bukan Tailwind Indigo klise.
+- **Bento Grid Architecture**: Kartu berbingkai perimeter halus, tanpa garis aksen kiri tebal.
+- **Monoline Inline SVG Icons**: Ikon konsisten berstandar monoline stroke 1.8px tanpa emoji pada antarmuka fitur.
+- **Aksesibilitas & Standar WCAG AAA**: Kontras teks tinggi, navigasi keyboard `:focus-visible`, dan dukungan `prefers-reduced-motion`.
 - **Default Light Mode** dengan tombol alih cepat **Mode Terang / Mode Gelap**.
 - **Fitur Dwi-Bahasa (Bilingual)**: Bahasa Indonesia (Default) & English (US).
-- Posisi tombol kontrol berada di pojok kanan atas (*floating top-right utility bar*).
-- Ikon SVG profesional dan tipografi *Plus Jakarta Sans* & *Inter*.
 
 ---
 
