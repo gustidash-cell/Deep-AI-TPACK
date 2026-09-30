@@ -12,218 +12,347 @@
 </head>
 <body>
 
-  <!-- FLOATING TOP-RIGHT UTILITY CONTROLS BAR -->
-  <div class="top-controls-bar">
-    <a href="https://github.com/gustidash-cell/Deep-AI-TPACK" target="_blank" rel="noopener noreferrer" class="toggle-btn" aria-label="GitHub Repository">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-      <span>GitHub</span>
-    </a>
-    <button type="button" class="btn-toggle-theme toggle-btn" onclick="toggleTheme()" aria-label="Toggle Theme">
-      <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-      <span>Mode Terang</span>
-    </button>
-    <button type="button" class="btn-toggle-lang toggle-btn" onclick="toggleLanguage()" aria-label="Toggle Language">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-      <span>English (US)</span>
-    </button>
-  </div>
+  <!-- UNIFIED STICKY SITE NAVBAR (ANTI-AI-SLOP: EMBEDDED UTILITIES, ZERO OVERLAYS) -->
+  <header class="site-header">
+    <div class="site-nav-container">
+      <a href="index.html" class="nav-brand">
+        <div class="brand-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <div class="brand-text">
+          <span>AI-TPACK</span>
+          <span class="brand-tag">Siklus 1</span>
+        </div>
+      </a>
 
-  <!-- HERO EXECUTIVE HEADER -->
-  <header class="hero-header">
-    <div class="hero-content">
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-        <span class="badge-tag" data-id="DDR Siklus 1 &middot; PFR 2025/2026" data-en="DDR Cycle 1 &middot; PFR 2025/2026">DDR Siklus 1 &middot; PFR 2025/2026</span>
-        <span class="badge-tag gold" data-id="Suite Produk Digital Interaktif" data-en="Interactive Digital Product Suite">Suite Produk Digital Interaktif</span>
-      </div>
-      <h1 class="gradient-text" data-id="Penguatan Kompetensi AI-TPACK Calon Guru Matematika" data-en="Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers">Penguatan Kompetensi AI-TPACK Calon Guru Matematika</h1>
-      <p class="hero-sub" data-id="Platform Digital Interaktif Hasil Design Research (DDR) Siklus 1 — Konteks Pembelajaran Sistem Persamaan Linear Dua Variabel (SPLDV)." data-en="Interactive Digital Platform for Developmental Design Research (DDR) Cycle 1 — System of Linear Equations Context.">
-        Platform Digital Interaktif Hasil Design Research (DDR) Siklus 1 — Konteks Pembelajaran Sistem Persamaan Linear Dua Variabel (SPLDV).
-      </p>
-      <div class="meta-pills">
-        <div class="meta-pill" data-id="<strong>3 Pertemuan Pembelajaran</strong> (P1, P2, P3)" data-en="<strong>3 Learning Sessions</strong> (P1, P2, P3)"><strong>3 Pertemuan Pembelajaran</strong> (P1, P2, P3)</div>
-        <div class="meta-pill" data-id="<strong>Kerjasama Kampus:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban" data-en="<strong>Institutional Collaboration:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban"><strong>Kerjasama Kampus:</strong> Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban</div>
-        <div class="meta-pill" data-id="<strong>Tim Peneliti:</strong> Siti Suprihatiningsih &middot; Gusti Uripno &middot; Rudy Hartono" data-en="<strong>Research Team:</strong> Siti Suprihatiningsih &middot; Gusti Uripno &middot; Rudy Hartono"><strong>Tim Peneliti:</strong> Siti Suprihatiningsih &middot; Gusti Uripno &middot; Rudy Hartono</div>
-        <div class="meta-pill"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> <strong data-id="Akses Realtime:" data-en="Realtime Access:">Akses Realtime:</strong>&nbsp;<span class="realtime-date-text"></span></div>
+      <nav class="nav-menu" aria-label="Suite Navigation">
+        <a href="index.html" class="nav-link active">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span data-id="Dashboard" data-en="Dashboard">Dashboard</span>
+        </a>
+        <a href="HLT_Siklus1_Interactive.html" class="nav-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+          <span data-id="HLT Siklus 1" data-en="HLT Cycle 1">HLT Siklus 1</span>
+        </a>
+        <a href="ALT_Siklus1_Interactive.html" class="nav-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <span data-id="ALT Lapangan" data-en="Field ALT">ALT Lapangan</span>
+        </a>
+        <a href="LKM_P1_Interactive.html" class="nav-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          <span data-id="LKM P1: Audit" data-en="LKM P1: Audit">LKM P1: Audit</span>
+        </a>
+        <a href="LKM_P2_Interactive.html" class="nav-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          <span data-id="LKM P2: Prompt" data-en="LKM P2: Prompt">LKM P2: Prompt</span>
+        </a>
+        <a href="#angket-evaluasi" class="nav-link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <span data-id="Angket Evaluasi" data-en="Evaluation Survey">Angket Evaluasi</span>
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/gustidash-cell/Deep-AI-TPACK" target="_blank" rel="noopener noreferrer" class="nav-action-btn" aria-label="GitHub Repository" title="GitHub Repository">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          <span>GitHub</span>
+        </a>
+        <button type="button" class="btn-toggle-theme nav-action-btn" onclick="toggleTheme()" aria-label="Toggle Theme">
+          <svg class="sun-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <span>Mode Terang</span>
+        </button>
+        <button type="button" class="btn-toggle-lang nav-action-btn" onclick="toggleLanguage()" aria-label="Toggle Language">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span>English</span>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- NAVIGATION BAR -->
-  <nav class="suite-nav">
-    <div class="nav-container">
-      <ul class="nav-links">
-        <li class="nav-item">
-          <a href="index.html" class="active">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            <span data-id="Dashboard Utama" data-en="Dashboard">Dashboard Utama</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="HLT_Siklus1_Interactive.html">
+  <!-- HERO EXECUTIVE HEADER -->
+  <header class="hero-header">
+    <div class="hero-content">
+      <div class="hero-tagline-row">
+        <span class="badge-tag" data-id="DDR Siklus 1 &middot; PFR 2025/2026" data-en="DDR Cycle 1 &middot; PFR 2025/2026">DDR Siklus 1 &middot; PFR 2025/2026</span>
+        <span class="badge-tag gold" data-id="Suite Produk Digital Interaktif" data-en="Interactive Digital Product Suite">Suite Produk Digital Interaktif</span>
+      </div>
+      <h1 data-id="Penguatan Kompetensi AI-TPACK Calon Guru Matematika" data-en="Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers">Penguatan Kompetensi AI-TPACK Calon Guru Matematika</h1>
+      <p class="hero-sub" data-id="Platform Digital Interaktif Hasil Design Research (DDR) Siklus 1 — Konteks Pembelajaran Sistem Persamaan Linear Dua Variabel (SPLDV)." data-en="Interactive Digital Platform for Developmental Design Research (DDR) Cycle 1 — System of Linear Equations Context.">
+        Platform Digital Interaktif Hasil Design Research (DDR) Siklus 1 — Konteks Pembelajaran Sistem Persamaan Linear Dua Variabel (SPLDV).
+      </p>
+
+      <!-- REFINED HERO METADATA GRID -->
+      <div class="hero-meta-grid">
+        <div class="hero-meta-card">
+          <div class="hero-meta-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
-            <span data-id="HLT Siklus 1" data-en="HLT Cycle 1">HLT Siklus 1</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="ALT_Siklus1_Interactive.html">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            <span data-id="ALT &amp; Komparator Lapangan" data-en="ALT &amp; Field Comparator">ALT &amp; Komparator Lapangan</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="LKM_P1_Interactive.html">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-            <span data-id="LKM P1: Audit &amp; Klasifikasi" data-en="Worksheet 1: Audit &amp; Classify">LKM P1: Audit &amp; Klasifikasi</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="LKM_P2_Interactive.html">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            <span data-id="LKM P2: Rancangan &amp; Lab Prompt" data-en="Worksheet 2: Design &amp; Prompt Lab">LKM P2: Rancangan &amp; Lab Prompt</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#angket-evaluasi">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            <span data-id="Angket Pre &amp; Post-Test" data-en="Pre &amp; Post-Test Survey">Angket Pre &amp; Post-Test</span>
-          </a>
-        </li>
-      </ul>
+          </div>
+          <div class="hero-meta-text">
+            <strong data-id="3 Pertemuan Pembelajaran" data-en="3 Learning Sessions">3 Pertemuan Pembelajaran</strong>
+            <span data-id="P1: Audit &middot; P2: Desain &middot; P3: Simulasi" data-en="S1: Audit &middot; S2: Design &middot; S3: Simulation">P1: Audit &middot; P2: Desain &middot; P3: Simulasi</span>
+          </div>
+        </div>
+
+        <div class="hero-meta-card">
+          <div class="hero-meta-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v4M12 14v4M16 14v4"/></svg>
+          </div>
+          <div class="hero-meta-text">
+            <strong data-id="Kerjasama Antar-Kampus" data-en="Institutional Collaboration">Kerjasama Antar-Kampus</strong>
+            <span data-id="Unika Santo Agustinus Hippo &amp; Unirow Tuban" data-en="Unika Santo Agustinus Hippo &amp; Unirow Tuban">Unika Santo Agustinus Hippo &amp; Unirow Tuban</span>
+          </div>
+        </div>
+
+        <div class="hero-meta-card">
+          <div class="hero-meta-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="hero-meta-text">
+            <strong data-id="Tim Peneliti Riset" data-en="Research Team">Tim Peneliti Riset</strong>
+            <span>Siti Suprihatiningsih &middot; Gusti Uripno &middot; Rudy Hartono</span>
+          </div>
+        </div>
+
+        <div class="hero-meta-card">
+          <div class="hero-meta-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="hero-meta-text">
+            <strong data-id="Akses Realtime" data-en="Realtime Access">Akses Realtime</strong>
+            <span class="realtime-date-text"></span>
+          </div>
+        </div>
+      </div>
     </div>
-  </nav>
+  </header>
 
   <!-- MAIN CONTAINER -->
   <main class="container">
 
     <!-- METRICS & KEY HIGHLIGHTS -->
-    <section style="margin-bottom: 40px;">
-      <div class="grid-4">
-        <div class="card card-primary" style="text-align:center;">
-          <div style="font-size:2.4rem; font-weight:800; color:var(--primary);">3</div>
-          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;" data-id="Pertemuan Pembelajaran" data-en="Learning Sessions">Pertemuan Pembelajaran</div>
+    <section>
+      <div class="metrics-row">
+        <div class="metric-card m-blue">
+          <div class="metric-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+          </div>
+          <div class="metric-info">
+            <div class="metric-val">3</div>
+            <div class="metric-title" data-id="Pertemuan Pembelajaran" data-en="Learning Sessions">Pertemuan Pembelajaran</div>
+            <div class="metric-desc" data-id="HLT Siklus 1 Terstruktur" data-en="Structured Cycle 1 HLT">HLT Siklus 1 Terstruktur</div>
+          </div>
         </div>
-        <div class="card card-secondary" style="text-align:center;">
-          <div style="font-size:2.4rem; font-weight:800; color:var(--secondary);">99</div>
-          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;" data-id="Indikator Observasi ALT" data-en="ALT Observation Indicators">Indikator Observasi ALT</div>
+
+        <div class="metric-card m-teal">
+          <div class="metric-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <div class="metric-info">
+            <div class="metric-val">99</div>
+            <div class="metric-title" data-id="Indikator Observasi ALT" data-en="ALT Observation Indicators">Indikator Observasi ALT</div>
+            <div class="metric-desc" data-id="Data Lapangan Terverifikasi" data-en="Verified Field Observations">Data Lapangan Terverifikasi</div>
+          </div>
         </div>
-        <div class="card card-gold" style="text-align:center;">
-          <div style="font-size:2.4rem; font-weight:800; color:var(--gold);">4</div>
-          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;" data-id="Prompt Pedagogis Wajib" data-en="Mandatory Pedagogical Prompts">Prompt Pedagogis Wajib</div>
+
+        <div class="metric-card m-amber">
+          <div class="metric-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="metric-info">
+            <div class="metric-val">4</div>
+            <div class="metric-title" data-id="Prompt Pedagogis Wajib" data-en="Mandatory Pedagogical Prompts">Prompt Pedagogis Wajib</div>
+            <div class="metric-desc" data-id="Formula Prompt 5–7 Komponen" data-en="5–7 Component Prompt Formula">Formula Prompt 5–7 Komponen</div>
+          </div>
         </div>
-        <div class="card card-green" style="text-align:center;">
-          <div style="font-size:2.4rem; font-weight:800; color:var(--green);">100%</div>
-          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;" data-id="Interaktif &amp; Auto-Save" data-en="Interactive &amp; Auto-Save">Interaktif &amp; Auto-Save</div>
+
+        <div class="metric-card m-green">
+          <div class="metric-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="metric-info">
+            <div class="metric-val">100%</div>
+            <div class="metric-title" data-id="Interaktif &amp; Auto-Save" data-en="Interactive &amp; Auto-Save">Interaktif &amp; Auto-Save</div>
+            <div class="metric-desc" data-id="Local Storage Realtime" data-en="Realtime Local Storage">Local Storage Realtime</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- MODULE CARDS NAVIGATION GRID -->
-    <section style="margin-bottom: 50px;">
-      <h2 style="font-size: 1.6rem; margin-bottom: 20px;" data-id="Modul Digital Utama AI-TPACK" data-en="Core AI-TPACK Digital Modules">Modul Digital Utama AI-TPACK</h2>
-      <div class="grid-2">
+    <!-- BENTO GRID SUITE: 2 TOP FOUNDATIONS + 3 BOTTOM IMPLEMENTATION TOOLS -->
+    <section>
+      <div class="bento-section-title">
+        <div>
+          <h2 data-id="Modul Digital Utama AI-TPACK" data-en="Core AI-TPACK Digital Modules">Modul Digital Utama AI-TPACK</h2>
+          <p style="font-size:0.9rem; color:var(--text-dim); margin-top:4px;" data-id="Desain pembelajaran, instrumen observasi, lembar kerja interaktif, dan alat evaluasi terintegrasi." data-en="Integrated learning designs, observation matrices, interactive worksheets, and evaluation tools.">
+            Desain pembelajaran, instrumen observasi, lembar kerja interaktif, dan alat evaluasi terintegrasi.
+          </p>
+        </div>
+        <span class="badge-tag primary" data-id="5 Modul Terintegrasi" data-en="5 Integrated Modules">5 Modul Terintegrasi</span>
+      </div>
+
+      <div class="bento-grid-suite">
         
-        <!-- CARD HLT -->
-        <div class="card card-primary" style="display:flex; flex-direction:column; justify-space-between;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-              <span class="badge-tag" data-id="Desain Pembelajaran" data-en="Learning Design">Desain Pembelajaran</span>
+        <!-- ROW 1, ITEM 1: HLT SIKLUS 1 (50% WIDTH) -->
+        <div class="bento-item-half">
+          <article class="bento-card theme-primary">
+            <div class="bento-card-header">
+              <span class="badge-tag primary" data-id="Desain Pembelajaran" data-en="Learning Design">Desain Pembelajaran</span>
               <span class="status-badge status-sesuai" data-id="Revisi Siklus 1" data-en="Cycle 1 Revision">Revisi Siklus 1</span>
             </div>
-            <h3 style="font-size:1.3rem; margin-bottom:10px;" data-id="HLT Siklus 1 (Hypothetical Learning Trajectory)" data-en="HLT Cycle 1 (Hypothetical Learning Trajectory)">HLT Siklus 1 (Hypothetical Learning Trajectory)</h3>
-            <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;" data-id="Rancangan hipotesis lintasan belajar calon guru matematika untuk 3 pertemuan. Memuat alur aktivitas, prediksi respons, dan Antisipasi Didaktis Pedagogis (ADP)." data-en="Hypothetical learning trajectory design for pre-service mathematics teachers across 3 sessions, featuring activity flows, predicted responses, and pedagogical anticipation (ADP).">
-              Rancangan hipotesis lintasan belajar calon guru matematika untuk 3 pertemuan. Memuat alur aktivitas, prediksi respons, dan Antisipasi Didaktis Pedagogis (ADP).
-            </p>
-            <ul style="color:var(--text-muted); font-size:0.86rem; margin-left:20px; margin-bottom:20px;">
-              <li data-id="P1: Audit AI vs Buku Teks &amp; Klasifikasi Kartu Tugas" data-en="Session 1: AI vs Textbook Audit &amp; Task Card Classification">P1: Audit AI vs Buku Teks &amp; Klasifikasi Kartu Tugas</li>
-              <li data-id="P2: Lokakarya Rancangan &amp; Laboratorium Prompt Pedagogis" data-en="Session 2: Activity Design Workshop &amp; Prompt Engineering Lab">P2: Lokakarya Rancangan &amp; Laboratorium Prompt Pedagogis</li>
-              <li data-id="P3: Simulasi Mengajar Mikro dengan 4 Komplikasi Real-time" data-en="Session 3: Microteaching Simulation with 4 Real-time Complications">P3: Simulasi Mengajar Mikro dengan 4 Komplikasi Real-time</li>
-            </ul>
-          </div>
-          <a href="HLT_Siklus1_Interactive.html" class="btn btn-primary" data-id="Buka Modul HLT Interaktif &rarr;" data-en="Open Interactive HLT Module &rarr;">Buka Modul HLT Interaktif &rarr;</a>
+            <div class="bento-card-body">
+              <h3 data-id="HLT Siklus 1 (Hypothetical Learning Trajectory)" data-en="HLT Cycle 1 (Hypothetical Learning Trajectory)">HLT Siklus 1 (Hypothetical Learning Trajectory)</h3>
+              <p data-id="Rancangan hipotesis lintasan belajar calon guru matematika untuk 3 pertemuan. Memuat alur aktivitas terencana, prediksi respons siswa, dan Antisipasi Didaktis Pedagogis (ADP)." data-en="Hypothetical learning trajectory design for pre-service math teachers across 3 sessions, featuring planned activity flows, predicted student responses, and pedagogical anticipation (ADP).">
+                Rancangan hipotesis lintasan belajar calon guru matematika untuk 3 pertemuan. Memuat alur aktivitas terencana, prediksi respons siswa, dan Antisipasi Didaktis Pedagogis (ADP).
+              </p>
+              <ul class="bento-card-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="<strong>Pertemuan 1:</strong> Audit Penjelasan AI vs Buku Teks &amp; Klasifikasi Kartu Tugas" data-en="<strong>Session 1:</strong> AI vs Textbook Audit &amp; Task Card Classification"><strong>Pertemuan 1:</strong> Audit Penjelasan AI vs Buku Teks &amp; Klasifikasi Kartu Tugas</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="<strong>Pertemuan 2:</strong> Lokakarya Rancangan &amp; Lab Rekayasa Prompt Pedagogis" data-en="<strong>Session 2:</strong> Design Workshop &amp; Pedagogical Prompt Lab"><strong>Pertemuan 2:</strong> Lokakarya Rancangan &amp; Lab Rekayasa Prompt Pedagogis</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="<strong>Pertemuan 3:</strong> Simulasi Mengajar Mikro dengan 4 Komplikasi Real-time" data-en="<strong>Session 3:</strong> Microteaching Simulation with 4 Real-time Complications"><strong>Pertemuan 3:</strong> Simulasi Mengajar Mikro dengan 4 Komplikasi Real-time</span>
+                </li>
+              </ul>
+            </div>
+            <div class="bento-card-footer">
+              <a href="HLT_Siklus1_Interactive.html" class="btn btn-primary" style="width:100%;" data-id="Buka Modul HLT Interaktif &rarr;" data-en="Open Interactive HLT Module &rarr;">
+                <span data-id="Buka Modul HLT Interaktif &rarr;" data-en="Open Interactive HLT Module &rarr;">Buka Modul HLT Interaktif &rarr;</span>
+              </a>
+            </div>
+          </article>
         </div>
 
-        <!-- CARD ALT -->
-        <div class="card card-secondary" style="display:flex; flex-direction:column; justify-space-between;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <!-- ROW 1, ITEM 2: ALT SIKLUS 1 (50% WIDTH) -->
+        <div class="bento-item-half">
+          <article class="bento-card theme-secondary">
+            <div class="bento-card-header">
               <span class="badge-tag gold" data-id="Data Lapangan" data-en="Field Observation">Data Lapangan</span>
               <span class="status-badge status-unexpected" data-id="99 Kode Indikator" data-en="99 Indicator Codes">99 Kode Indikator</span>
             </div>
-            <h3 style="font-size:1.3rem; margin-bottom:10px;" data-id="ALT &amp; Komparator HLT vs ALT Lapangan" data-en="ALT &amp; Field HLT vs ALT Comparator">ALT &amp; Komparator HLT vs ALT Lapangan</h3>
-            <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;" data-id="Matriks observasi aktual lintasan belajar lapangan Siklus 1. Dilengkapi status kesesuaian (✓ Sesuai, ≈ Sebagian, ✗ Berbeda, ⭐ Temuan Tak Terprediksi) &amp; Implikasi Siklus 2." data-en="Actual learning trajectory field observation matrix for Cycle 1, featuring status badges (✓ Conforming, ≈ Partial, ✗ Deviating, ⭐ Unexpected Finding) &amp; Cycle 2 implications.">
-              Matriks observasi aktual lintasan belajar lapangan Siklus 1. Dilengkapi status kesesuaian (✓ Sesuai, ≈ Sebagian, ✗ Berbeda, ⭐ Temuan Tak Terprediksi) &amp; Implikasi Siklus 2.
-            </p>
-            <ul style="color:var(--text-muted); font-size:0.86rem; margin-left:20px; margin-bottom:20px;">
-              <li data-id="Filter pencarian instan berdasar status &amp; kode pertemuan" data-en="Instant search filter by status &amp; session code">Filter pencarian instan berdasar status &amp; kode pertemuan</li>
-              <li data-id="Analisis komparatif Prediksi HLT vs Respons Aktual Lapangan" data-en="Comparative analysis: HLT Prediction vs Actual Field Response">Analisis komparatif Prediksi HLT vs Respons Aktual Lapangan</li>
-              <li data-id="Tindak lanjut operasional &amp; revisi desain untuk Siklus 2" data-en="Operational follow-up &amp; design revisions for Cycle 2">Tindak lanjut operasional &amp; revisi desain untuk Siklus 2</li>
-            </ul>
-          </div>
-          <a href="ALT_Siklus1_Interactive.html" class="btn btn-secondary" data-id="Buka Modul ALT &amp; Komparator &rarr;" data-en="Open ALT &amp; Comparator Module &rarr;">Buka Modul ALT &amp; Komparator &rarr;</a>
+            <div class="bento-card-body">
+              <h3 data-id="ALT &amp; Komparator HLT vs ALT Lapangan" data-en="ALT &amp; Field HLT vs ALT Comparator">ALT &amp; Komparator HLT vs ALT Lapangan</h3>
+              <p data-id="Matriks observasi aktual lintasan belajar lapangan Siklus 1. Dilengkapi status kesesuaian empiris (✓ Sesuai, ≈ Sebagian, ✗ Berbeda, ⭐ Temuan Tak Terprediksi) &amp; Implikasi Siklus 2." data-en="Actual learning trajectory field observation matrix for Cycle 1, featuring empirical conformity badges (✓ Conforming, ≈ Partial, ✗ Deviating, ⭐ Unexpected Finding) &amp; Cycle 2 implications.">
+                Matriks observasi aktual lintasan belajar lapangan Siklus 1. Dilengkapi status kesesuaian empiris (✓ Sesuai, ≈ Sebagian, ✗ Berbeda, ⭐ Temuan Tak Terprediksi) &amp; Implikasi Siklus 2.
+              </p>
+              <ul class="bento-card-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="Filter pencarian instan berdasar status &amp; kode pertemuan" data-en="Instant search filter by status &amp; session code">Filter pencarian instan berdasar status &amp; kode pertemuan</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="Analisis komparatif Prediksi HLT vs Respons Aktual Mahasiswa" data-en="Comparative analysis: HLT Prediction vs Actual Student Response">Analisis komparatif Prediksi HLT vs Respons Aktual Mahasiswa</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="Tindak lanjut operasional &amp; revisi desain untuk Siklus 2" data-en="Operational follow-up &amp; design revisions for Cycle 2">Tindak lanjut operasional &amp; revisi desain untuk Siklus 2</span>
+                </li>
+              </ul>
+            </div>
+            <div class="bento-card-footer">
+              <a href="ALT_Siklus1_Interactive.html" class="btn btn-secondary" style="width:100%;" data-id="Buka Modul ALT &amp; Komparator &rarr;" data-en="Open ALT &amp; Comparator Module &rarr;">
+                <span data-id="Buka Modul ALT &amp; Komparator &rarr;" data-en="Open ALT &amp; Comparator Module &rarr;">Buka Modul ALT &amp; Komparator &rarr;</span>
+              </a>
+            </div>
+          </article>
         </div>
 
-        <!-- CARD LKM P1 -->
-        <div class="card card-gold" style="display:flex; flex-direction:column; justify-space-between;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-              <span class="badge-tag" data-id="Lembar Kerja Interaktif" data-en="Interactive Worksheet">Lembar Kerja Interaktif</span>
+        <!-- ROW 2, ITEM 1: LKM PERTEMUAN 1 (33.3% WIDTH) -->
+        <div class="bento-item-third">
+          <article class="bento-card theme-amber">
+            <div class="bento-card-header">
+              <span class="badge-tag" data-id="Lembar Kerja 01" data-en="Worksheet 01">Lembar Kerja 01</span>
               <span class="status-badge status-sebagian" data-id="Pertemuan 1" data-en="Session 1">Pertemuan 1</span>
             </div>
-            <h3 style="font-size:1.3rem; margin-bottom:10px;" data-id="LKM P1: Audit, Observasi Video &amp; Klasifikasi AI" data-en="Worksheet 1: AI Audit, Video Observation &amp; Classification">LKM P1: Audit, Observasi Video &amp; Klasifikasi AI</h3>
-            <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;" data-id="Lembar kerja interaktif Pertemuan 1 lengkap 4 aktivitas: Audit Penjelasan AI vs Buku Teks, Observasi Video Guru Berbasis AI (3 Lensa &amp; 3 Momen Henti), Game Klasifikasi 8 Kartu Tugas, serta Kartu Kriteria &amp; Kerangka Kondisi Batas." data-en="Interactive Session 1 worksheet with 4 complete activities: AI vs Textbook Audit, Video Observation Protocol (3 Lenses &amp; 3 Pause Moments), 8 Task Card Classifier, and AI Evaluation Criteria &amp; Boundary Framework.">
-              Lembar kerja interaktif Pertemuan 1 lengkap 4 aktivitas: Audit Penjelasan AI vs Buku Teks, Observasi Video Guru Berbasis AI (3 Lensa &amp; 3 Momen Henti), Game Klasifikasi 8 Kartu Tugas, serta Kartu Kriteria &amp; Kerangka Kondisi Batas.
-            </p>
-            <ul style="color:var(--text-muted); font-size:0.86rem; margin-left:20px; margin-bottom:20px;">
-              <li data-id="Aktivitas 1 &amp; 2: Audit Penjelasan AI vs Buku Teks &amp; Protokol Observasi Video 3 Lensa" data-en="Activities 1 &amp; 2: AI vs Textbook Audit &amp; 3-Lens Video Observation Protocol">Aktivitas 1 &amp; 2: Audit Penjelasan AI vs Buku Teks &amp; Protokol Observasi Video 3 Lensa</li>
-              <li data-id="Aktivitas 3: Klasifikasi Interaktif 8 Kartu Tugas SPLDV (Kategori A, B, C) &amp; feedback instan" data-en="Activity 3: Interactive 8 Task Card Classification (Categories A, B, C) &amp; instant feedback">Aktivitas 3: Klasifikasi Interaktif 8 Kartu Tugas SPLDV (Kategori A, B, C) &amp; feedback instan</li>
-              <li data-id="Aktivitas 4: Kartu Kriteria Evaluasi AI &amp; Kerangka Kondisi Batas (6 Tipe Tugas SPLDV)" data-en="Activity 4: AI Evaluation Criteria Card &amp; Boundary Framework (6 SPLDV Task Types)">Aktivitas 4: Kartu Kriteria Evaluasi AI &amp; Kerangka Kondisi Batas (6 Tipe Tugas SPLDV)</li>
-            </ul>
-          </div>
-          <a href="LKM_P1_Interactive.html" class="btn btn-outline" style="border-color:var(--gold); color:var(--gold);" data-id="Buka LKM Pertemuan 1 &rarr;" data-en="Open Session 1 Worksheet &rarr;">Buka LKM Pertemuan 1 &rarr;</a>
+            <div class="bento-card-body">
+              <h3 data-id="LKM P1: Audit AI &amp; Klasifikasi Kartu" data-en="LKM P1: AI Audit &amp; Task Cards">LKM P1: Audit AI &amp; Klasifikasi Kartu</h3>
+              <p data-id="Lembar kerja interaktif Pertemuan 1 lengkap 4 aktivitas: Audit Penjelasan AI vs Buku Teks, Protokol Observasi Video 3 Lensa, dan Game Klasifikasi 8 Kartu Tugas SPLDV." data-en="Interactive Session 1 worksheet with 4 activities: AI vs Textbook Audit, 3-Lens Video Protocol, and 8 Task Card Classification Game.">
+                Lembar kerja interaktif Pertemuan 1 lengkap 4 aktivitas: Audit Penjelasan AI vs Buku Teks, Protokol Observasi Video 3 Lensa, dan Game Klasifikasi 8 Kartu Tugas SPLDV.
+              </p>
+              <ul class="bento-card-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="Audit AI vs Buku Teks &amp; Video 3 Lensa" data-en="AI vs Textbook Audit &amp; 3-Lens Video">Audit AI vs Buku Teks &amp; Video 3 Lensa</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="Klasifikasi Interaktif 8 Kartu Tugas SPLDV" data-en="Interactive 8 Task Card Classification">Klasifikasi Interaktif 8 Kartu Tugas SPLDV</span>
+                </li>
+              </ul>
+            </div>
+            <div class="bento-card-footer">
+              <a href="LKM_P1_Interactive.html" class="btn btn-outline" style="width:100%; border-color:var(--gold); color:var(--gold);" data-id="Buka LKM Pertemuan 1 &rarr;" data-en="Open Worksheet 1 &rarr;">
+                <span data-id="Buka LKM Pertemuan 1 &rarr;" data-en="Open Worksheet 1 &rarr;">Buka LKM Pertemuan 1 &rarr;</span>
+              </a>
+            </div>
+          </article>
         </div>
 
-        <!-- CARD LKM P2 -->
-        <div class="card card-green" style="display:flex; flex-direction:column; justify-space-between;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-              <span class="badge-tag" data-id="Lembar Kerja Interaktif" data-en="Interactive Worksheet">Lembar Kerja Interaktif</span>
+        <!-- ROW 2, ITEM 2: LKM PERTEMUAN 2 (33.3% WIDTH) -->
+        <div class="bento-item-third">
+          <article class="bento-card theme-green">
+            <div class="bento-card-header">
+              <span class="badge-tag" data-id="Lembar Kerja 02" data-en="Worksheet 02">Lembar Kerja 02</span>
               <span class="status-badge status-sesuai" data-id="Pertemuan 2" data-en="Session 2">Pertemuan 2</span>
             </div>
-            <h3 style="font-size:1.3rem; margin-bottom:10px;" data-id="LKM P2: Merancang &amp; Lab Prompt" data-en="Worksheet 2: Design &amp; Prompt Lab">LKM P2: Merancang &amp; Lab Prompt</h3>
-            <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;" data-id="Lokakarya Perancangan Aktivitas 9 Komponen, Laboratorium Rekayasa Prompt Pedagogis, Perpustakaan 4 Prompt Wajib, serta Formulir Peer Review." data-en="9-Component Activity Design Workshop, Pedagogical Prompt Engineering Laboratory, Personal 4-Prompt Library, and Peer Review matrix.">
-              Lokakarya Perancangan Aktivitas 9 Komponen, Laboratorium Rekayasa Prompt Pedagogis, Perpustakaan 4 Prompt Wajib, serta Formulir Peer Review.
-            </p>
-            <ul style="color:var(--text-muted); font-size:0.86rem; margin-left:20px; margin-bottom:20px;">
-              <li data-id="Template Rancangan Aktivitas 4 Kelompok Tematik" data-en="9-Component Activity Design Template for 4 Thematic Focuses">Template Rancangan Aktivitas 4 Kelompok Tematik</li>
-              <li data-id="Formula Rekayasa Prompt Pedagogis 5–7 Komponen" data-en="5–7 Component Pedagogical Prompt Engineering Formula">Formula Rekayasa Prompt Pedagogis 5–7 Komponen</li>
-              <li data-id="Formulir Tinjauan Sejawat (Peer Review) &amp; Log Revisi Prompt" data-en="Peer Review Evaluation Matrix &amp; 5-Minute Revision Log">Formulir Tinjauan Sejawat (Peer Review) &amp; Log Revisi Prompt</li>
-            </ul>
-          </div>
-          <a href="LKM_P2_Interactive.html" class="btn btn-outline" style="border-color:var(--border-color);" data-id="Buka LKM Pertemuan 2 &rarr;" data-en="Open Session 2 Worksheet &rarr;">Buka LKM Pertemuan 2 &rarr;</a>
+            <div class="bento-card-body">
+              <h3 data-id="LKM P2: Rancangan &amp; Lab Prompt" data-en="LKM P2: Design &amp; Prompt Lab">LKM P2: Rancangan &amp; Lab Prompt</h3>
+              <p data-id="Lokakarya Perancangan Aktivitas 9 Komponen, Laboratorium Rekayasa Prompt Pedagogis 5–7 Komponen, serta Matriks Umpan Balik Tinjauan Sejawat (Peer Review)." data-en="9-Component Activity Design Workshop, Pedagogical Prompt Engineering Laboratory, and Peer Review feedback matrix.">
+                Lokakarya Perancangan Aktivitas 9 Komponen, Laboratorium Rekayasa Prompt Pedagogis 5–7 Komponen, serta Matriks Umpan Balik Tinjauan Sejawat (Peer Review).
+              </p>
+              <ul class="bento-card-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="Perancangan Aktivitas 9 Komponen" data-en="9-Component Activity Design Template">Perancangan Aktivitas 9 Komponen</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="Lab Rekayasa 4 Prompt Pedagogis Wajib" data-en="Mandatory 4 Pedagogical Prompts Lab">Lab Rekayasa 4 Prompt Pedagogis Wajib</span>
+                </li>
+              </ul>
+            </div>
+            <div class="bento-card-footer">
+              <a href="LKM_P2_Interactive.html" class="btn btn-outline" style="width:100%; border-color:var(--green); color:var(--green);" data-id="Buka LKM Pertemuan 2 &rarr;" data-en="Open Worksheet 2 &rarr;">
+                <span data-id="Buka LKM Pertemuan 2 &rarr;" data-en="Open Worksheet 2 &rarr;">Buka LKM Pertemuan 2 &rarr;</span>
+              </a>
+            </div>
+          </article>
         </div>
 
-        <!-- CARD 5: BENTO FEATURED ANGKET PRE & POST-TEST -->
-        <div class="card card-primary" style="display:flex; flex-direction:column; justify-space-between; grid-column: 1 / -1;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
-              <span class="badge-tag gold" data-id="Instrumen Evaluasi Siklus 1" data-en="Cycle 1 Evaluation Instrument">Instrumen Evaluasi Siklus 1</span>
-              <span class="status-badge status-sesuai" data-id="Pre-Test &amp; Post-Test Aktif" data-en="Pre &amp; Post-Test Active">Pre-Test &amp; Post-Test Aktif</span>
+        <!-- ROW 2, ITEM 3: ANGKET PRE & POST-TEST (33.3% WIDTH) -->
+        <div class="bento-item-third">
+          <article class="bento-card theme-primary">
+            <div class="bento-card-header">
+              <span class="badge-tag gold" data-id="Evaluasi Riset" data-en="Research Eval">Evaluasi Riset</span>
+              <span class="status-badge status-sesuai" data-id="Instrumen Aktif" data-en="Active Instrument">Instrumen Aktif</span>
             </div>
-            <h3 style="font-size:1.3rem; margin-bottom:10px;" data-id="Instrumen Angket Pengukuran AI-TPACK (Pre-Test &amp; Post-Test)" data-en="AI-TPACK Measurement Survey Instruments (Pre-Test &amp; Post-Test)">Instrumen Angket Pengukuran AI-TPACK (Pre-Test &amp; Post-Test)</h3>
-            <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:16px;" data-id="Kuesioner evaluasi diri calon guru matematika untuk mengukur perkembangan 7 dimensi AI-TPACK materi SPLDV sebelum dan sesudah intervensi DDR Siklus 1. Tersedia modul live embed interaktif pada dashboard ini serta halaman mandiri untuk peserta." data-en="Self-assessment survey for pre-service math teachers measuring 7 AI-TPACK dimensions in SPLDV before and after Cycle 1 DDR intervention. Accessible via live interactive embed on this dashboard and as a dedicated standalone page.">
-              Kuesioner evaluasi diri calon guru matematika untuk mengukur perkembangan 7 dimensi AI-TPACK materi SPLDV sebelum dan sesudah intervensi DDR Siklus 1. Tersedia modul live embed interaktif pada dashboard ini serta halaman mandiri untuk peserta.
-            </p>
-          </div>
-          <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <a href="#angket-evaluasi" class="btn btn-primary" data-id="Buka Angket di Dashboard &darr;" data-en="Open Survey on Dashboard &darr;">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-              <span data-id="Buka Angket di Dashboard &darr;" data-en="Open Survey on Dashboard &darr;">Buka Angket di Dashboard &darr;</span>
-            </a>
-            <a href="Angket_Pre_Post_Test.html" class="btn btn-outline" data-id="Buka Halaman Mandiri &rarr;" data-en="Open Standalone Page &rarr;">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              <span data-id="Buka Halaman Mandiri &rarr;" data-en="Open Standalone Page &rarr;">Buka Halaman Mandiri &rarr;</span>
-            </a>
-          </div>
+            <div class="bento-card-body">
+              <h3 data-id="Angket Pre-Test &amp; Post-Test" data-en="Pre-Test &amp; Post-Test Survey">Angket Pre-Test &amp; Post-Test</h3>
+              <p data-id="Kuesioner evaluasi diri calon guru matematika untuk mengukur perkembangan 7 dimensi AI-TPACK materi SPLDV sebelum dan sesudah intervensi DDR Siklus 1." data-en="Pre-service teacher self-assessment questionnaires measuring 7 AI-TPACK dimensions in SPLDV before and after Cycle 1 DDR intervention.">
+                Kuesioner evaluasi diri calon guru matematika untuk mengukur perkembangan 7 dimensi AI-TPACK materi SPLDV sebelum dan sesudah intervensi DDR Siklus 1.
+              </p>
+              <ul class="bento-card-list">
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="Embed Google Forms interaktif langsung" data-en="Direct interactive Google Forms embed">Embed Google Forms interaktif langsung</span>
+                </li>
+                <li>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                  <span data-id="Panduan &amp; Matriks Kisi-kisi 7 Dimensi" data-en="7-Dimension Grid Matrix &amp; Guide">Panduan &amp; Matriks Kisi-kisi 7 Dimensi</span>
+                </li>
+              </ul>
+            </div>
+            <div class="bento-card-footer">
+              <a href="#angket-evaluasi" class="btn btn-primary" style="width:100%;" data-id="Buka Seksi Angket &darr;" data-en="Open Survey Section &darr;">
+                <span data-id="Buka Seksi Angket &darr;" data-en="Open Survey Section &darr;">Buka Seksi Angket &darr;</span>
+              </a>
+            </div>
+          </article>
         </div>
 
       </div>
