@@ -3,14 +3,15 @@
 🌐 **Live Website (GitHub Pages):** [https://gustidash-cell.github.io/Deep-AI-TPACK/](https://gustidash-cell.github.io/Deep-AI-TPACK/)
 
 > **Platform Digital Interaktif Penguatan Kompetensi AI-TPACK Calon Guru Matematika dalam Konteks SPLDV**
-> Hasil *Developmental Design Research (DDR)* Siklus 1 — Kerjasama **Universitas Katolik Santo Agustinus Hippo** & **Universitas PGRI Ronggolawe Tuban**.
+> Hasil *Developmental Design Research (DDR)* Siklus 1 — Kerjasama **Universitas Katolik Santo Agustinus Hippo** & **Universitas PGRI Ronggolawe**.
 
 ---
 
 ## 📌 Tim Peneliti
-- **Siti Suprihatiningsih**
-- **Gusti Uripno**
-- **Rudy Hartono**
+- **Dr. Siti Suprihatiningsih, M.Pd.** (Ketua Peneliti — Universitas Katolik Santo Agustinus Hippo)
+- **Gusti Uripno, M.Pd.** (Anggota Peneliti — Universitas PGRI Ronggolawe)
+- **Rudy Hartono, S.Kom., M.Kom.** (Anggota Peneliti — Universitas Katolik Santo Agustinus Hippo)
+- *Mahasiswa Peneliti:* **Apri Andreagus** & **Monjelika Cahya Kaljian** (Universitas Katolik Santo Agustinus Hippo)
 
 ---
 
@@ -71,4 +72,4 @@ Cukup buka berkas `index.html` langsung di peramban (Chrome / Edge / Firefox) at
 
 ---
 
-© 2026 DDR AI-TPACK &middot; Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban.
+© 2026 DDR AI-TPACK &middot; Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe.

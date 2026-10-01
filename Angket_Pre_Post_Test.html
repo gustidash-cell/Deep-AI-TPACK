@@ -96,19 +96,19 @@
     <section style="margin-bottom: 30px;">
       <div class="grid-3">
         <div class="card card-primary" style="text-align:center;">
-          <div style="font-size:2rem; font-weight:800; color:var(--primary);" data-id="Pre-Test" data-en="Pre-Test">Pre-Test</div>
-          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;" data-id="Sebelum Pertemuan 1 (P1)" data-en="Prior to Session 1 (P1)">Sebelum Pertemuan 1 (P1)</div>
-          <div style="font-size:0.8rem; color:var(--text-dim); margin-top:6px;" data-id="Baseline profil literasi &amp; kesiapan AI" data-en="Baseline literacy &amp; AI readiness profile">Baseline profil literasi &amp; kesiapan AI</div>
+          <div class="stat-card-val primary" data-id="Pre-Test" data-en="Pre-Test">Pre-Test</div>
+          <div class="stat-card-label" data-id="Sebelum Pertemuan 1 (P1)" data-en="Prior to Session 1 (P1)">Sebelum Pertemuan 1 (P1)</div>
+          <div class="stat-card-sub" data-id="Baseline profil literasi &amp; kesiapan AI" data-en="Baseline literacy &amp; AI readiness profile">Baseline profil literasi &amp; kesiapan AI</div>
         </div>
         <div class="card card-secondary" style="text-align:center;">
-          <div style="font-size:2rem; font-weight:800; color:var(--secondary);" data-id="Post-Test" data-en="Post-Test">Post-Test</div>
-          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;" data-id="Setelah Pertemuan 3 (P3)" data-en="After Session 3 (P3)">Setelah Pertemuan 3 (P3)</div>
-          <div style="font-size:0.8rem; color:var(--text-dim); margin-top:6px;" data-id="Pengukuran peningkatan kompetensi akhir" data-en="Final competency gain measurement">Pengukuran peningkatan kompetensi akhir</div>
+          <div class="stat-card-val secondary" data-id="Post-Test" data-en="Post-Test">Post-Test</div>
+          <div class="stat-card-label" data-id="Setelah Pertemuan 3 (P3)" data-en="After Session 3 (P3)">Setelah Pertemuan 3 (P3)</div>
+          <div class="stat-card-sub" data-id="Pengukuran peningkatan kompetensi akhir" data-en="Final competency gain measurement">Pengukuran peningkatan kompetensi akhir</div>
         </div>
         <div class="card card-gold" style="text-align:center;">
-          <div style="font-size:2rem; font-weight:800; color:var(--gold);">7 Dimensi</div>
-          <div style="font-size:0.85rem; color:var(--text-muted); font-weight:600; text-transform:uppercase;" data-id="AI-TPACK Terintegrasi" data-en="Integrated AI-TPACK">AI-TPACK Terintegrasi</div>
-          <div style="font-size:0.8rem; color:var(--text-dim); margin-top:6px;" data-id="TK, PK, CK, TPK, TCK, PCK, TPACK" data-en="TK, PK, CK, TPK, TCK, PCK, TPACK">TK, PK, CK, TPK, TCK, PCK, TPACK</div>
+          <div class="stat-card-val gold">7 Dimensi</div>
+          <div class="stat-card-label" data-id="AI-TPACK Terintegrasi" data-en="Integrated AI-TPACK">AI-TPACK Terintegrasi</div>
+          <div class="stat-card-sub" data-id="TK, PK, CK, TPK, TCK, PCK, TPACK" data-en="TK, PK, CK, TPK, TCK, PCK, TPACK">TK, PK, CK, TPK, TCK, PCK, TPACK</div>
         </div>
       </div>
     </section>
@@ -135,7 +135,7 @@
 
         <!-- TAB CONTENT 1: PRE-TEST -->
         <div id="tab-pretest" class="eval-tab-content active">
-          <div style="background:var(--bg-glass); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:16px 20px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+          <div class="mini-card" style="padding:16px 20px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
             <div>
               <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
                 <span class="status-badge status-sebagian" data-id="Status: Pre-Test Awal" data-en="Status: Baseline Pre-Test">Status: Pre-Test Awal</span>
@@ -182,7 +182,7 @@
 
         <!-- TAB CONTENT 2: POST-TEST -->
         <div id="tab-posttest" class="eval-tab-content">
-          <div style="background:var(--bg-glass); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:16px 20px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+          <div class="mini-card" style="padding:16px 20px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
             <div>
               <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
                 <span class="status-badge status-sesuai" data-id="Status: Post-Test Akhir" data-en="Status: Final Post-Test">Status: Post-Test Akhir</span>
@@ -224,11 +224,12 @@
             <div id="container-posttest-page" class="form-iframe-container" style="height: 820px;">
               <iframe id="iframe-posttest-page" src="https://docs.google.com/forms/d/e/1FAIpQLSdo_hLqxfZ5ND2d6FCdmsNoLI2Q9G5TM1POkb4n92Kr2VyPEg/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Memuat Formulir Post-Test…</iframe>
             </div>
+          </div>
         </div>
 
         <!-- TAB CONTENT 3: PEDOMAN & KISI-KISI -->
         <div id="tab-pedoman" class="eval-tab-content">
-          <div style="background:var(--bg-glass); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:24px; margin-bottom:20px;">
+          <div class="mini-card" style="padding:24px; margin-bottom:20px;">
             <h3 style="font-size:1.25rem; color:var(--heading-color); margin-bottom:12px;" data-id="Petunjuk Pengisian &amp; Indikator AI-TPACK SPLDV" data-en="Guidelines &amp; AI-TPACK SPLDV Indicators">Petunjuk Pengisian &amp; Indikator AI-TPACK SPLDV</h3>
             <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:18px;" data-id="Kuesioner ini dirancang untuk memotret transformasi kompetensi calon guru matematika dalam 7 sub-dimensi AI-TPACK yang kontekstual dengan materi Sistem Persamaan Linear Dua Variabel (SPLDV):" data-en="This questionnaire captures the transformation of pre-service math teachers across 7 AI-TPACK sub-dimensions contextualized in Systems of Linear Equations (SPLDV):">
               Kuesioner ini dirancang untuk memotret transformasi kompetensi calon guru matematika dalam 7 sub-dimensi AI-TPACK yang kontekstual dengan materi Sistem Persamaan Linear Dua Variabel (SPLDV):
@@ -261,12 +262,9 @@
               </div>
             </div>
 
-            <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-sm); padding:16px;">
-              <strong style="color:var(--primary); font-size:0.92rem;" data-id="Catatan Kerahasiaan Data Penelitian:" data-en="Research Data Confidentiality Note:">Catatan Kerahasiaan Data Penelitian:</strong>
-              <p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Data respon Anda digunakan semata-mata untuk kepentingan penelitian pengembangan DDR Siklus 1 PFR 2025/2026 dan publikasi ilmiah tanpa mencantumkan identitas pribadi responden." data-en="Your response data is utilized exclusively for DDR Cycle 1 PFR 2025/2026 research development and scientific publications without disclosing personal identity.">
+            <div class="callout-box callout-primary"><strong data-id="Catatan Kerahasiaan Data Penelitian:" data-en="Research Data Confidentiality Note:">Catatan Kerahasiaan Data Penelitian:</strong><p style="font-size:0.84rem; color:var(--text-muted); margin-top:4px;" data-id="Data respon Anda digunakan semata-mata untuk kepentingan penelitian pengembangan DDR Siklus 1 PFR 2025/2026 dan publikasi ilmiah tanpa mencantumkan identitas pribadi responden." data-en="Your response data is utilized exclusively for DDR Cycle 1 PFR 2025/2026 research development and scientific publications without disclosing personal identity.">
                 Data respon Anda digunakan semata-mata untuk kepentingan penelitian pengembangan DDR Siklus 1 PFR 2025/2026 dan publikasi ilmiah tanpa mencantumkan identitas pribadi responden.
-              </p>
-            </div>
+              </p></div>
 
           </div>
         </div>
@@ -279,8 +277,11 @@
   <!-- FOOTER -->
   <footer class="suite-footer">
     <p><strong data-id="Platform Digital AI-TPACK SPLDV" data-en="AI-TPACK SPLDV Digital Platform">Platform Digital AI-TPACK SPLDV</strong> &middot; DDR Siklus 1 &copy; 2026 PFR 2025/2026</p>
-    <p style="margin-top:6px; font-size:0.8rem; color:var(--text-dim);" data-id="Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban" data-en="Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers &middot; Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban">
-      Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe Tuban
+    <p style="margin-top:6px; font-size:0.82rem; color:var(--text-muted);" data-id="Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe" data-en="Strengthening AI-TPACK Competence of Pre-Service Mathematics Teachers &middot; Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe">
+      Penguatan Kompetensi AI-TPACK Calon Guru Matematika &middot; Universitas Katolik Santo Agustinus Hippo &amp; Universitas PGRI Ronggolawe
+    </p>
+    <p style="margin-top:4px; font-size:0.78rem; color:var(--text-dim);" data-id="Tim Peneliti: Dr. Siti Suprihatiningsih, M.Pd. &middot; Gusti Uripno, M.Pd. &middot; Rudy Hartono, S.Kom., M.Kom." data-en="Research Team: Dr. Siti Suprihatiningsih, M.Pd. &middot; Gusti Uripno, M.Pd. &middot; Rudy Hartono, S.Kom., M.Kom.">
+      Tim Peneliti: Dr. Siti Suprihatiningsih, M.Pd. &middot; Gusti Uripno, M.Pd. &middot; Rudy Hartono, S.Kom., M.Kom.
     </p>
   </footer>
 
